@@ -54,35 +54,35 @@ const About = () => {
       <section className='w-full sm:w-[100%] sm:mx-auto sm:mb-20'>
         <div className=' staff sm:w-[90%] gap-3  sm:ml-auto'>
           <div className='flex flex-col  w-[90%]'>
-            <img className='sm:w-[100%]' src={require('../image/img/lalit.png')} alt="photo1" />
+            <img className='sm:w-[100%]' src={require('../image/staff/lalit.png')} alt="photo1" />
             <div className='flex flex-col items-center'>
               <h4 className=' font-poppins font-[400] sm:text-[26px]'>Lalit Singh</h4>
               <p className=' font-poppins font-[300] sm:text-[20px]'>Co-founder</p>
             </div>
           </div>
           <div className='flex flex-col  w-[90%]'>
-            <img className='sm:w-[100%]' src={require('../image/img/shalin.png')} alt="photo1" />
+            <img className='sm:w-[100%]' src={require('../image/staff/shalin.png')} alt="photo1" />
             <div className='flex flex-col items-center'>
               <h4 className=' font-poppins font-[400] sm:text-[26px]'>Shalin Maheshwari</h4>
               <p className=' font-poppins font-[300] sm:text-[20px]'>Co-founder</p>
             </div>
           </div>
           <div className='flex flex-col  w-[90%]'>
-            <img className='sm:w-[100%]' src={require('../image/img/amit.png')} alt="photo1" />
+            <img className='sm:w-[100%]' src={require('../image/staff/amit.png')} alt="photo1" />
             <div className='flex flex-col items-center'>
               <h4 className=' font-poppins font-[400] sm:text-[26px]'>Amit Duggal</h4>
               <p className=' font-poppins font-[300] sm:text-[20px]'>Chief Operating Officer</p>
             </div>
           </div>
           <div className='flex flex-col  w-[90%]'>
-            <img className='sm:w-[100%]' src={require('../image/img/anis.png')} alt="photo1" />
+            <img className='sm:w-[100%]' src={require('../image/staff/anis.png')} alt="photo1" />
             <div className='flex flex-col items-center'>
               <h4 className=' font-poppins font-[400] sm:text-[26px]'>Anis Kazi</h4>
               <p className=' font-poppins font-[300] sm:text-[20px]'>CBO-Logistics & Ecommerce</p>
             </div>
           </div>
           <div className='flex flex-col  w-[90%]'>
-            <img className='sm:w-[100%]' src={require('../image/img/sandeep.png')} alt="photo1" />
+            <img className='sm:w-[100%]' src={require('../image/staff/sandeep.png')} alt="photo1" />
             <div className='flex flex-col items-center'>
               <h4 className=' font-poppins font-[400] sm:text-[26px]'>Sandeep Shevale</h4>
               <p className=' font-poppins font-[300] sm:text-[20px]'>CBO- Manufacturing</p>
@@ -96,21 +96,21 @@ const About = () => {
             </div>
           </div>
           <div className='flex flex-col  w-[90%]'>
-            <img className='sm:w-[100%]' src={require('../image/img/sachin.png')} alt="photo1" />
+            <img className='sm:w-[100%]' src={require('../image/staff/sachin.png')} alt="photo1" />
             <div className='flex flex-col items-center'>
               <h4 className=' font-poppins font-[400] sm:text-[26px]'>Sachin Chavan</h4>
               <p className=' font-poppins font-[300] sm:text-[20px]'>National Head- Recruitment Services</p>
             </div>
           </div>
           <div className='flex flex-col  w-[90%]'>
-            <img className='sm:w-[100%]' src={require('../image/img/shalin.png')} alt="photo1" />
+            <img className='sm:w-[100%]' src={require('../image/staff/shalin.png')} alt="photo1" />
             <div className='flex flex-col items-center'>
               <h4 className=' font-poppins font-[400] sm:text-[26px]'>Shaily Maheshwari</h4>
               <p className=' font-poppins font-[300] sm:text-[20px]'>Advisor</p>
             </div>
           </div>
           <div className='flex flex-col  w-[90%]'>
-            <img className='sm:w-[100%]' src={require('../image/img/sudarshan.png')} alt="photo1" />
+            <img className='sm:w-[100%]' src={require('../image/staff/sudarshan.png')} alt="photo1" />
             <div className='flex flex-col items-center'>
               <h4 className=' font-poppins font-[400] sm:text-[26px]'>Sudarshan Jadwal</h4>
               <p className=' font-poppins font-[300] sm:text-[20px]'>Business Head - Gig Works</p>

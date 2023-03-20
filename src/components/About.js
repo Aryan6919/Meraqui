@@ -47,115 +47,77 @@ const About = () => {
            </div>
         </div> 
       </section>
-      {/* <section className='w-[95%] mx-auto my-12'> */}
-        {/* <div className='w-full sm:mb-12'>
-          <h2 className='text-3xl sm:text-4xl'>Journey</h2>
-        </div> */}
-        {/* <div className='w-full sm:flex sm:flex-row sm:ml-16 sm:justify-center'>
-          <div className='w-full mt-6 sm:w-[60%] sm:flex sm:flex-col sm:justify-between sm:h-[25vh] sm:my-auto'>
-            <div className='w-full'>
-              <h1 className='text-[1.4rem] sm:text-[1.6rem] text-center'>The Team</h1>
-            </div> */}
-            {/* <div className='w-full mt-1 sm:mt-8 sm:w-[70%]'>
-              <p className='text-left sm:w-full'>
-                We align our understanding according to your business needs and proactively initiate the HR processes to suit your requirements leveraging the power of Artificial Intelligence. We have a robust pan India presence in over 22 states, 55 cities, and are aiming to grow significantly in the times to come.
-
-              </p>
-            </div> */}
-          {/* </div> */}
-          {/* <div className='mt-2 sm:w-[60%] sm:relative sm:right-[-5%]'>
-            <img className='sm:w-[100%]' src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
-          </div> */}
-        {/* </div>
-      </section> */}
-      {/* <h1 className='text-[1.4rem] sm:text-[1.6rem] text-center'>The Team</h1> */}
+      
       <div className='w-full mb-4 sm:mb-16'>
           <h2 className='text-3xl sm:text-4xl font-poppins font-[300]'>The Team</h2>
         </div>
-   
-        <section className='bg-[white] p-8 h-fill w-[100%] font-poppins'>
-        <div className=' grid  grid-cols-1 sm:grid-cols-3 sm:w-[95%] sm:ml-32 sm:mx-auto'>
-          <div className='sm:flex sm:flex-col w-[100%]  mb-4 sm:mb-0'>
-            
-            <div className='rounded-[10px] flex justify-center  sm:w-[68%] sm:rounded-[10px] sm:h-[30vh] sm:flex sm:justify-center'>
-              <img src={require('../image/img/LalitSir.jpg')} className="p-2 w-[60%] sm:p-2 sm:w-[70%] sm:h-fill" alt="" />
-            </div>
-      
-            
-            <div className='sm:flex w-[100%]  sm:w-[68%] sm:bottom-5  sm:relative sm:mb-8'>
-              <div className='flex justify-center w-[88%] mx-auto rounded-[10px] bg-cyan-100 bottom-6 relative shadow-lg h-[8vh] flex-col sm:mx-auto bg-white sm:shadow-sm sm:w-[88%] sm:h-[15vh] sm:flex sm:justify-center sm:flex-col sm:rounded-[10px] sm:relative '>
-                <h2 className='font-poppins font-[400]' >Lalit Singh</h2>
-                <p className='font-poppins font-[300]'>Co-Founder</p>
-              </div>
-            </div>
-        
-          </div>
-          <div className='sm:flex sm:flex-col w-[100%] mb-4 sm:mb-0'>
-            <div className='rounded-[10px] flex justify-center  sm:w-[68%] sm:rounded-[10px] sm:h-[30vh] sm:flex sm:justify-center'>
-              <img src={require('../image/img/ShalinSir.jpg')} className="p-2 w-[60%] sm:p-2 sm:w-[70%] sm:h-fill" alt="" />
-            </div>
-            <div className='sm:flex w-[100%]  sm:w-[68%] sm:bottom-5  sm:relative sm:mb-8'>
-              <div className='flex justify-center w-[88%] mx-auto rounded-[10px] bg-cyan-100 bottom-6 relative shadow-lg h-[8vh] flex-col sm:mx-auto bg-white sm:shadow-sm sm:w-[88%] sm:h-[15vh] sm:flex sm:justify-center sm:flex-col sm:rounded-[10px] sm:relative '>
-                <h2 className='font-poppins font-[400]' >Shalin Maheshwari</h2>
-                <p className='font-poppins font-[300]'>Co-Founder</p>
-              </div>
+      <section className='w-full sm:w-[100%] sm:mx-auto sm:mb-20'>
+        <div className=' staff sm:w-[90%] gap-3  sm:ml-auto'>
+          <div className='flex flex-col  w-[90%]'>
+            <img className='sm:w-[100%]' src={require('../image/staff/lalit.png')} alt="photo1" />
+            <div className='flex flex-col items-center'>
+              <h4 className=' font-poppins font-[400] sm:text-[26px]'>Lalit Singh</h4>
+              <p className=' font-poppins font-[300] sm:text-[20px]'>Co-founder</p>
             </div>
           </div>
-          <div className='sm:flex sm:flex-col w-[100%] mb-4 sm:mb-0'>
-            <div className='rounded-[10px] flex justify-center  sm:w-[68%] sm:rounded-[10px] sm:h-[30vh] sm:flex sm:justify-center'>
-              <img src={require('../image/img/AmitSir.jpg')} className="p-2 w-[60%] sm:p-2 sm:w-[70%] sm:h-fill" alt="" />
-            </div>
-            <div className='sm:flex w-[100%]  sm:w-[68%] sm:bottom-5  sm:relative sm:mb-8'>
-              <div className='flex justify-center w-[88%] mx-auto rounded-[10px] bg-cyan-100 bottom-6 relative shadow-lg h-[8vh] flex-col sm:mx-auto bg-white sm:shadow-sm sm:w-[88%] sm:h-[15vh] sm:flex sm:justify-center sm:flex-col sm:rounded-[10px] sm:relative '>
-                <h2 className='font-poppins font-[400]' >Amit Duggal</h2>
-                <p className='font-poppins font-[300]'>Chief Operating Officer</p>
-              </div>
+          <div className='flex flex-col  w-[90%]'>
+            <img className='sm:w-[100%]' src={require('../image/staff/shalin.png')} alt="photo1" />
+            <div className='flex flex-col items-center'>
+              <h4 className=' font-poppins font-[400] sm:text-[26px]'>Shalin Maheshwari</h4>
+              <p className=' font-poppins font-[300] sm:text-[20px]'>Co-founder</p>
             </div>
           </div>
-          <div className='sm:flex sm:flex-col w-[100%] mb-4 sm:mb-0'>
-            <div className='rounded-[10px] flex justify-center  sm:w-[68%] sm:rounded-[10px] sm:h-[30vh] sm:flex sm:justify-center'>
-              <img src={require('../image/img/AnisSir.jpg')} className="p-2 w-[60%] sm:p-2 sm:w-[70%] sm:h-fill" alt="" />
-            </div>
-            <div className='sm:flex w-[100%]  sm:w-[68%] sm:bottom-5 sm:relative sm:mb-8'>
-              <div className='flex justify-center w-[88%] mx-auto rounded-[10px]  bg-cyan-100 bottom-6 relative shadow-lg h-[8vh] flex-col sm:mx-auto bg-white sm:shadow-sm sm:w-[88%] sm:h-[15vh] sm:flex sm:justify-center sm:flex-col sm:rounded-[10px] sm:relative '>
-                <h2 className='font-poppins font-[400]' >Anis Kazi</h2>
-                <p className='font-poppins font-[300]'>CBO-Logistics & Ecommerce</p>
-              </div>
+          <div className='flex flex-col  w-[90%]'>
+            <img className='sm:w-[100%]' src={require('../image/staff/amit.png')} alt="photo1" />
+            <div className='flex flex-col items-center'>
+              <h4 className=' font-poppins font-[400] sm:text-[26px]'>Amit Duggal</h4>
+              <p className=' font-poppins font-[300] sm:text-[20px]'>Chief Operating Officer</p>
             </div>
           </div>
-          <div className='sm:flex sm:flex-col w-[100%] mb-4 sm:mb-0'>
-            <div className='rounded-[10px] flex justify-center sm:w-[68%] sm:rounded-[10px] sm:h-[30vh] sm:flex sm:justify-center'>
-              <img src={require('../image/img/SandeepSir.jpg')} className="p-2 w-[60%] sm:p-2 sm:w-[70%] sm:h-fill" alt="" />
-            </div>
-            <div className='sm:flex w-[100%]  sm:w-[68%] sm:bottom-5  sm:relative sm:mb-8'>
-              <div className='flex justify-center w-[88%] mx-auto rounded-[10px] bg-cyan-100 bottom-6 relative shadow-lg h-[8vh] flex-col sm:mx-auto bg-white sm:shadow-sm sm:w-[88%] sm:h-[15vh] sm:flex sm:justify-center sm:flex-col sm:rounded-[10px] sm:relative '>
-                <h2 className='font-poppins font-[400]'>Sandeep Shevale</h2>
-                <p className='font-poppins font-[300]'>CBO- Manufacturing</p>
-              </div>
+          <div className='flex flex-col  w-[90%]'>
+            <img className='sm:w-[100%]' src={require('../image/staff/anis.png')} alt="photo1" />
+            <div className='flex flex-col items-center'>
+              <h4 className=' font-poppins font-[400] sm:text-[26px]'>Anis Kazi</h4>
+              <p className=' font-poppins font-[300] sm:text-[20px]'>CBO-Logistics & Ecommerce</p>
             </div>
           </div>
-          <div className='sm:flex sm:flex-col w-[100%] mb-4 sm:mb-0'>
-            <div className='rounded-[10px] flex justify-center  sm:w-[68%] sm:rounded-[10px] sm:h-[30vh] sm:flex sm:justify-center'>
-              <img src={require('../image/img/ChiranjeevJha.jpg')} className="p-2 w-[60%] sm:p-2 sm:w-[70%] sm:h-fill" alt="" />
-            </div>
-            <div className='sm:flex w-[100%]  sm:w-[68%] sm:bottom-5  sm:relative sm:mb-8'>
-              <div className='flex justify-center w-[88%] mx-auto rounded-[10px] bg-cyan-100 bottom-6 relative shadow-lg h-[10vh] flex-col sm:mx-auto bg-white sm:shadow-sm sm:w-[88%] sm:h-[15vh] sm:flex sm:justify-center sm:flex-col sm:rounded-[10px] sm:relative '>
-                <h2 className='font-poppins font-[400]'>Chiranjeev Jha</h2>
-                <p className='px-[2px] font-poppins font-[300]'>Business Head- Frontline Staffing</p>
-              </div>
+          <div className='flex flex-col  w-[90%]'>
+            <img className='sm:w-[100%]' src={require('../image/staff/sandeep.png')} alt="photo1" />
+            <div className='flex flex-col items-center'>
+              <h4 className=' font-poppins font-[400] sm:text-[26px]'>Sandeep Shevale</h4>
+              <p className=' font-poppins font-[300] sm:text-[20px]'>CBO- Manufacturing</p>
             </div>
           </div>
-          <div className='sm:flex sm:flex-col w-[100%] mb-4 sm:mb-0'>
-            <div className='rounded-[10px] flex justify-center  sm:w-[68%] sm:rounded-[10px] sm:h-[30vh] sm:flex sm:justify-center'>
-              <img src={require('../image/img/SachinChavan.jpg')} className="p-2 w-[60%] sm:p-2 sm:w-[70%] sm:h-fill" alt="" />
-            </div>
-            <div className='sm:flex w-[100%]  sm:w-[68%] sm:bottom-5  sm:relative sm:mb-8'>
-              <div className=' flex justify-center w-[88%] mx-auto rounded-[10px] bg-cyan-100 bottom-6 relative shadow-lg h-[10vh] flex-col sm:mx-auto bg-white sm:shadow-sm sm:w-[88%] sm:h-[15vh] sm:flex sm:justify-center sm:flex-col sm:rounded-[10px] sm:relative '>
-                <h2 className='  ' >Sachin Chavan</h2>
-                <p className=''>National Head- Recruitment Services</p>
-              </div>
+          <div className='flex flex-col  w-[90%]'>
+            <img className='sm:w-[100%]' src={require('../image/staff/chiranjeev.png')} alt="photo1" />
+            <div className='flex flex-col items-center'>
+              <h4 className=' font-poppins font-[400] sm:text-[26px]'>Chiranjeev Jha</h4>
+              <p className=' font-poppins font-[300] sm:text-[20px]'>Business Head- Frontline Staffing</p>
             </div>
           </div>
+          <div className='flex flex-col  w-[90%]'>
+            <img className='sm:w-[100%]' src={require('../image/staff/sachin.png')} alt="photo1" />
+            <div className='flex flex-col items-center'>
+              <h4 className=' font-poppins font-[400] sm:text-[26px]'>Sachin Chavan</h4>
+              <p className=' font-poppins font-[300] sm:text-[20px]'>National Head- Recruitment Services</p>
+            </div>
+          </div>
+          <div className='flex flex-col  w-[90%]'>
+            <img className='sm:w-[100%]' src={require('../image/staff/shalin.png')} alt="photo1" />
+            <div className='flex flex-col items-center'>
+              <h4 className=' font-poppins font-[400] sm:text-[26px]'>Shaily Maheshwari</h4>
+              <p className=' font-poppins font-[300] sm:text-[20px]'>Advisor</p>
+            </div>
+          </div>
+          <div className='flex flex-col  w-[90%]'>
+            <img className='sm:w-[100%]' src={require('../image/staff/sudarshan.png')} alt="photo1" />
+            <div className='flex flex-col items-center'>
+              <h4 className=' font-poppins font-[400] sm:text-[26px]'>Sudarshan Jadwal</h4>
+              <p className=' font-poppins font-[300] sm:text-[20px]'>Business Head - Gig Works</p>
+            </div>
+          </div>
+          
+          
         </div>
       </section>
         

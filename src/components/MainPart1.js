@@ -1,15 +1,16 @@
 import React from 'react'
-import { Navigation, Pagination,EffectCreative, Mousewheel, Scrollbar, A11y, Autoplay } from 'swiper';
+import '../App.css'
+import { Navigation, Pagination, Mousewheel, EffectCreative, Scrollbar, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import 'swiper/css/effect-cube'
-
-
-
-
+import 'swiper/css/effect-cube';
+// import { gsap } from 'gsap';
+// import { ScrollTrigger } from 'react-gsap';
+// import { ScrollTrigger } from 'gsap/all';
+// import ScrollTrigger from 'react-scroll-trigger';
 
 
 
@@ -194,13 +195,13 @@ const MainPart1 = () => {
             // header: " 1000 workers required for your new plant? 6",
             // body: "We can source and deploy in jiffy through our Pan India Node network on portal",
             sub_header: "Some Marquee Clients "
-        },{
+        }, {
             // url:"https://images.unsplash.com/photo-1521401415461-83e7162b8e64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
             url: require('../image/whyChooseUs/SomeMarquee.jpg'),
             // header: " 1000 workers required for your new plant? 6",
             // body: "We can source and deploy in jiffy through our Pan India Node network on portal",
             sub_header: "Man Hours "
-        },{
+        }, {
             // url:"https://images.unsplash.com/photo-1521401415461-83e7162b8e64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
             url: require('../image/whyChooseUs/Workforce.jpg'),
             // header: " 1000 workers required for your new plant? 6",
@@ -208,41 +209,44 @@ const MainPart1 = () => {
             sub_header: "3 PL Workforce Management "
         },
     ]
-
+   
     return (
         <main className='flex flex-col w-full mx-2 font-bold sm:w-[85%] sm:mx-auto'>
             <section className='w-full mt-4 font-thin'>
                 <h3 className='text-[1.5rem] sm:text-5xl sm:py-14 font-quicksand font-[400]'>Why choose Meraqui?</h3>
             </section>
             
+            {/* Carousel */}
+
             <section className='sm:flex sm:flex-row w-[95%] mx-auto  font-poppins font-[300] hidden '>
-                
+
                 <Swiper
                     className=' w-[100%] sm:w-[100%] sm:h-[80vh]'
 
-                    modules={[Navigation, Mousewheel, Autoplay,EffectCreative, Pagination, Scrollbar, A11y]}
+                    modules={[Navigation, Mousewheel, Autoplay, EffectCreative, Pagination, Scrollbar, A11y]}
                     spaceBetween={30}
                     direction="vertical"
                     slidesPerView={1}
                     mousewheel={true}
                     pagination={{ clickable: true, hide: true }}
                     scrollbar={{ draggable: true, hide: true }}
-                    
+
                     effect={"creative"}
                     creativeEffect={{
-                    prev: {
-                        shadow: false,
-                        translate: [0, 0, -90],
-                    },
-                    next: {
-                        translate: [0,"100%", 0],
-                    },
+                        prev: {
+                            shadow: false,
+                            translate: [0, 100, -200],
+                            opacity:0.6
+                        },
+                        next: {
+                            translate: [0, "100%", 0],
+                        },
                     }}
 
                 >
 
-                    <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto  mt-4   '>
-                        
+                    <SwiperSlide className='sm:flex sm:flex-row w-[95%] mx-auto  mt-4   '>
+
                         <section className='onHover sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg border-cyan-300 p-2'>
                             <div className=' sm:w-[100%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
                                 <div className='flex w-[100%]'>
@@ -258,7 +262,7 @@ const MainPart1 = () => {
                             </div>
                             <Swiper
                                 className=' w-[100%] sm:w-[80%] sm:h-[55vh] flex flex-col justify-center pic'
-                                modules={[Navigation, Mousewheel, Autoplay,EffectCreative, Pagination, Scrollbar, A11y]}
+                                modules={[Navigation, Mousewheel, Autoplay, EffectCreative, Pagination, Scrollbar, A11y]}
                                 spaceBetween={30}
                                 direction="horizontal"
                                 slidesPerView={1}
@@ -266,18 +270,18 @@ const MainPart1 = () => {
                                 autoplay
                                 pagination={{ clickable: false, hide: false }}
                                 scrollbar={{ draggable: false, hide: true }}
-                                
+
                                 effect={"creative"}
                                 creativeEffect={{
-                                prev: {
-                                    shadow: false,
-                                    translate: [0, 0, -400],
-                                },
-                                next: {
-                                    translate: ["100%",0, 0],
-                                },
+                                    prev: {
+                                        shadow: false,
+                                        translate: [0, 0, -400],
+                                    },
+                                    next: {
+                                        translate: ["100%", 0, 0],
+                                    },
                                 }}
-            
+
                             >
                                 <SwiperSlide className='pt-4 bg-white'>
                                     <div className='w-[100%] sm:w-[100%]  mb-4 relative right-[0%] '>
@@ -287,7 +291,7 @@ const MainPart1 = () => {
                                 </SwiperSlide>
                                 <SwiperSlide className='pt-4 bg-white'>
                                     <div className='w-[100%] sm:w-[100%]  mb-4 relative right-[0%] '>
-                                        <video autoPlay muted src={slides1[1].url}  className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] rounded-lg' />
+                                        <video autoPlay muted src={slides1[1].url} className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] rounded-lg' />
                                         <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides1[1].sub_header}</p>
                                     </div>
                                 </SwiperSlide>
@@ -315,12 +319,12 @@ const MainPart1 = () => {
                                         <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides1[5].sub_header}</p>
                                     </div>
                                 </SwiperSlide>
-                                
+
                             </Swiper>
                         </section>
                     </SwiperSlide>
                     <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto  mt-4   '>
-                        
+
                         <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg border-cyan-300 p-2 onHover'>
                             <div className=' sm:w-[100%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
                                 <div className='flex w-[100%]'>
@@ -336,7 +340,7 @@ const MainPart1 = () => {
                             </div>
                             <Swiper
                                 className=' w-[100%] sm:w-[80%] sm:h-[55vh] flex flex-col justify-center pic'
-                                modules={[Navigation, Mousewheel, Autoplay,EffectCreative, Pagination, Scrollbar, A11y]}
+                                modules={[Navigation, Mousewheel, Autoplay, EffectCreative, Pagination, Scrollbar, A11y]}
                                 spaceBetween={30}
                                 direction="horizontal"
                                 slidesPerView={1}
@@ -344,18 +348,18 @@ const MainPart1 = () => {
                                 autoplay
                                 pagination={{ clickable: false, hide: false }}
                                 scrollbar={{ draggable: false, hide: true }}
-                                
+
                                 effect={"creative"}
                                 creativeEffect={{
-                                prev: {
-                                    shadow: false,
-                                    translate: [0, 0, -400],
-                                },
-                                next: {
-                                    translate: ["100%",0, 0],
-                                },
+                                    prev: {
+                                        shadow: false,
+                                        translate: [0, 0, -400],
+                                    },
+                                    next: {
+                                        translate: ["100%", 0, 0],
+                                    },
                                 }}
-            
+
                             >
                                 <SwiperSlide className='pt-4 bg-white'>
                                     <div className='w-[100%] sm:w-[100%]  mb-4 relative right-[0%] '>
@@ -365,7 +369,7 @@ const MainPart1 = () => {
                                 </SwiperSlide>
                                 <SwiperSlide className='pt-4 bg-white'>
                                     <div className='w-[100%] sm:w-[100%]  mb-4 relative right-[0%] '>
-                                        <img alt='photo1'  src={slides2[1].url}  className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] rounded-lg' />
+                                        <img alt='photo1' src={slides2[1].url} className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] rounded-lg' />
                                         <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides2[1].sub_header}</p>
                                     </div>
                                 </SwiperSlide>
@@ -385,7 +389,7 @@ const MainPart1 = () => {
                         </section>
                     </SwiperSlide>
                     <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto  mt-4   '>
-                        
+
                         <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg border-cyan-300 p-2 onHover'>
                             <div className=' sm:w-[100%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
                                 <div className='flex w-[100%]'>
@@ -401,7 +405,7 @@ const MainPart1 = () => {
                             </div>
                             <Swiper
                                 className=' w-[100%] sm:w-[80%] sm:h-[55vh] flex flex-col justify-center pic'
-                                modules={[Navigation, Mousewheel, Autoplay,EffectCreative, Pagination, Scrollbar, A11y]}
+                                modules={[Navigation, Mousewheel, Autoplay, EffectCreative, Pagination, Scrollbar, A11y]}
                                 spaceBetween={30}
                                 direction="horizontal"
                                 slidesPerView={1}
@@ -409,18 +413,18 @@ const MainPart1 = () => {
                                 autoplay
                                 pagination={{ clickable: false, hide: false }}
                                 scrollbar={{ draggable: false, hide: true }}
-                                
+
                                 effect={"creative"}
                                 creativeEffect={{
-                                prev: {
-                                    shadow: false,
-                                    translate: [0, 0, -400],
-                                },
-                                next: {
-                                    translate: ["100%",0, 0],
-                                },
+                                    prev: {
+                                        shadow: false,
+                                        translate: [0, 0, -400],
+                                    },
+                                    next: {
+                                        translate: ["100%", 0, 0],
+                                    },
                                 }}
-            
+
                             >
                                 <SwiperSlide className='pt-4 bg-white'>
                                     <div className='w-[100%] sm:w-[100%]  mb-4 relative right-[0%] '>
@@ -430,7 +434,7 @@ const MainPart1 = () => {
                                 </SwiperSlide>
                                 <SwiperSlide className='pt-4 bg-white'>
                                     <div className='w-[100%] sm:w-[100%]  mb-4 relative right-[0%] '>
-                                        <img alt='photo1'  src={slides3[1].url}  className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] rounded-lg' />
+                                        <img alt='photo1' src={slides3[1].url} className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] rounded-lg' />
                                         <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides3[1].sub_header}</p>
                                     </div>
                                 </SwiperSlide>
@@ -464,12 +468,12 @@ const MainPart1 = () => {
                                         <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides3[6].sub_header}</p>
                                     </div>
                                 </SwiperSlide>
-                                
+
                             </Swiper>
                         </section>
                     </SwiperSlide>
                     <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto  mt-4   '>
-                        
+
                         <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg onHover border-cyan-300 p-2'>
                             <div className=' sm:w-[100%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
                                 <div className='flex w-[100%]'>
@@ -485,7 +489,7 @@ const MainPart1 = () => {
                             </div>
                             <Swiper
                                 className=' w-[100%] sm:w-[80%] sm:h-[55vh] flex flex-col justify-center pic'
-                                modules={[Navigation, Mousewheel, Autoplay,EffectCreative, Pagination, Scrollbar, A11y]}
+                                modules={[Navigation, Mousewheel, Autoplay, EffectCreative, Pagination, Scrollbar, A11y]}
                                 spaceBetween={30}
                                 direction="horizontal"
                                 slidesPerView={1}
@@ -493,18 +497,18 @@ const MainPart1 = () => {
                                 autoplay
                                 pagination={{ clickable: false, hide: false }}
                                 scrollbar={{ draggable: false, hide: true }}
-                                
+
                                 effect={"creative"}
                                 creativeEffect={{
-                                prev: {
-                                    shadow: false,
-                                    translate: [0, 0, -400],
-                                },
-                                next: {
-                                    translate: ["100%",0, 0],
-                                },
+                                    prev: {
+                                        shadow: false,
+                                        translate: [0, 0, -400],
+                                    },
+                                    next: {
+                                        translate: ["100%", 0, 0],
+                                    },
                                 }}
-            
+
                             >
                                 <SwiperSlide className='pt-4 bg-white'>
                                     <div className='w-[100%] sm:w-[100%]  mb-4 relative right-[0%] '>
@@ -514,7 +518,7 @@ const MainPart1 = () => {
                                 </SwiperSlide>
                                 <SwiperSlide className='pt-4 bg-white'>
                                     <div className='w-[100%] sm:w-[100%]  mb-4 relative right-[0%] '>
-                                        <img alt='photo1'  src={slides4[1].url}  className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] rounded-lg' />
+                                        <img alt='photo1' src={slides4[1].url} className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] rounded-lg' />
                                         <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides4[1].sub_header}</p>
                                     </div>
                                 </SwiperSlide>
@@ -560,162 +564,17 @@ const MainPart1 = () => {
                                         <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides4[8].sub_header}</p>
                                     </div>
                                 </SwiperSlide>
-                                
+
                             </Swiper>
                         </section>
                     </SwiperSlide>
-                    
-                    {/* <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto  mt-4   '>
-                        
-                        <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg border-cyan-300 p-2'>
-                            <div className=' sm:w-[55%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
-                                <div className='flex w-[100%]'>
-                                    <p className='w-[100%] sm:w-[65%] text-left sm:text-4xl font-quicksand font-[400]'>
-                                        {slides1[0].header}
-                                    </p>
-                                </div>
-                                <div className='w-full mt-4 sm:mt-8'>
-                                    <p className=' w-[85%] text-left sm:text-2xl  font-poppins font-[300] text-[0.6rem]'>
-                                        {slides1[0].body}
-                                    </p>
-                                </div>
-                            </div>
-                            <div className='w-[100%] sm:w-[40%]  mb-4 relative right-[0%] '>
-                                <video autoPlay muted src={slides1[1].url} className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] rounded-lg'></video>
-                                <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides1[1].sub_header}</p>
-                            </div>
-                        </section>
-                    </SwiperSlide>
-                    <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto  mt-4   '>
-                        
-                        <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg border-cyan-300 p-2'>
-                            <div className=' sm:w-[55%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
-                                <div className='flex w-[100%]'>
-                                    <p className='w-[100%] sm:w-[65%] text-left sm:text-4xl font-quicksand font-[400]'>
-                                        {slides1[0].header}
-                                    </p>
-                                </div>
-                                <div className='w-full mt-4 sm:mt-8'>
-                                    <p className=' w-[85%] text-left sm:text-2xl  font-poppins font-[300] text-[0.6rem]'>
-                                        {slides1[0].body}
-                                    </p>
-                                </div>
-                            </div>
-                            <div className='w-[100%] sm:w-[40%]  mb-4 relative right-[0%] '>
-                                <img src={slides1[2].url} alt="photo1" className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] rounded-lg' />
-                                <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides1[2].sub_header}</p>
-                            </div>
-                        </section>
-                    </SwiperSlide>
-                    <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto  mt-4   '>
-                        
-                        <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg border-cyan-300 p-2'>
-                            <div className=' sm:w-[55%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
-                                <div className='flex w-[100%]'>
-                                    <p className='w-[100%] sm:w-[65%] text-left sm:text-4xl font-quicksand font-[400]'>
-                                        {slides1[0].header}
-                                    </p>
-                                </div>
-                                <div className='w-full mt-4 sm:mt-8'>
-                                    <p className=' w-[85%] text-left sm:text-2xl  font-poppins font-[300] text-[0.6rem]'>
-                                        {slides1[0].body}
-                                    </p>
-                                </div>
-                            </div>
-                            <div className='w-[100%] sm:w-[40%]  mb-4 relative right-[0%] '>
-                                <img src={slides1[3].url} alt="photo1" className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] rounded-lg' />
-                                <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides1[3].sub_header}</p>
-                            </div>
-                        </section>
-                    </SwiperSlide>
-                    <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto  mt-4   '>
-                        
-                        <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg border-cyan-300 p-2'>
-                            <div className=' sm:w-[55%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
-                                <div className='flex w-[100%]'>
-                                    <p className='w-[100%] sm:w-[65%] text-left sm:text-4xl font-quicksand font-[400]'>
-                                        {slides1[0].header}
-                                    </p>
-                                </div>
-                                <div className='w-full mt-4 sm:mt-8'>
-                                    <p className=' w-[85%] text-left sm:text-2xl  font-poppins font-[300] text-[0.6rem]'>
-                                        {slides1[0].body}
-                                    </p>
-                                </div>
-                            </div>
-                            <div className='w-[100%] sm:w-[40%]  mb-4 relative right-[0%] '>
-                                <img src={slides1[4].url} alt="photo1" className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] rounded-lg' />
-                                <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides1[4].sub_header}</p>
-                            </div>
-                        </section>
-                    </SwiperSlide>
-                    <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto  mt-4   '>
-                        
-                        <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg border-cyan-300 p-2'>
-                            <div className=' sm:w-[55%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
-                                <div className='flex w-[100%]'>
-                                    <p className='w-[100%] sm:w-[65%] text-left sm:text-4xl font-quicksand font-[400]'>
-                                        {slides1[0].header}
-                                    </p>
-                                </div>
-                                <div className='w-full mt-4 sm:mt-8'>
-                                    <p className=' w-[85%] text-left sm:text-2xl  font-poppins font-[300] text-[0.6rem]'>
-                                        {slides1[0].body}
-                                    </p>
-                                </div>
-                            </div>
-                            <div className='w-[100%] sm:w-[40%]  mb-4 relative right-[0%] '>
-                                <img src={slides1[5].url} alt="photo1" className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] rounded-lg' />
-                                <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides1[5].sub_header}</p>
-                            </div>
-                        </section>
-                    </SwiperSlide>
-                     */}
-                    {/* <SwiperSlide className='flex flex-row w-[95%] sm:-[100%] mx-auto  mt-4'>
-                        <section className='flex sm:w-[100%] flex-row w-[95%] mx-auto  mt-4'>
-                            <div className='w-[100%] sm:w-[100%] '>
-                                <video src={slides1[1].url} muted  autoPlay className='mt-2   w-[100%] flex  h-[20vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[1] rounded'></video>
-                                <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides1[1].sub_header}</p>
-                            </div>
-                        </section>
-                    </SwiperSlide>
-                    <SwiperSlide className='flex flex-row w-[95%] sm:-[100%] mx-auto  mt-4'>
-                        <section className='flex sm:w-[100%] flex-row w-[95%] mx-auto  mt-4'>
-                            <div className='w-[100%] sm:w-[100%] '>
-                                <img src={slides1[2].url} alt="photo1" className='mt-2   w-[100%] flex  h-[20vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[1] rounded' />
-                                <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides1[2].sub_header}</p>
-                            </div>
-                        </section>
-                    </SwiperSlide>
-                    <SwiperSlide className='flex flex-row w-[95%] sm:-[100%] mx-auto  mt-4'>
-                        <section className='flex sm:w-[100%] flex-row w-[95%] mx-auto  mt-4'>
-                            <div className='w-[100%] sm:w-[100%] '>
-                                <img src={slides1[3].url} alt="photo1" className='mt-2   w-[100%] flex  h-[20vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[1] rounded' />
-                                <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides1[3].sub_header}</p>
-                            </div>
-                        </section>
-                    </SwiperSlide>
-                    <SwiperSlide className='flex flex-row w-[95%] sm:-[100%] mx-auto  mt-4'>
-                        <section className='flex sm:w-[100%] flex-row w-[95%] mx-auto  mt-4'>
-                            <div className='w-[100%] sm:w-[100%] '>
-                                <img src={slides1[4].url} alt="photo1" className='mt-2   w-[100%] flex  h-[20vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[1] rounded' />
-                                <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides1[4].sub_header}</p>
-                            </div>
-                        </section>
-                    </SwiperSlide>
-                    <SwiperSlide className='flex flex-row w-[95%] sm:-[100%] mx-auto  mt-4'>
-                        <section className='flex sm:w-[100%] flex-row w-[95%] mx-auto  mt-4'>
-                            <div className='w-[100%] sm:w-[100%] '>
-                                <img src={slides1[5].url} alt="photo1" className='mt-2   w-[100%] flex  h-[20vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[1] rounded' />
-                                <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides1[5].sub_header}</p>
-                            </div>
-                        </section>
-                    </SwiperSlide> */}
 
 
-                    
+
+
                 </Swiper>
             </section>
+
             
 
             {/* mobile view */}
@@ -756,7 +615,7 @@ const MainPart1 = () => {
                     <SwiperSlide className='flex flex-row w-[95%] sm:-[100%] mx-auto  mt-4'>
                         <section className='flex sm:w-[100%] flex-row w-[95%] mx-auto  mt-4'>
                             <div className='w-[100%] sm:w-[100%] '>
-                            <video src={slides1[1].url} muted  autoPlay className='mt-2   w-[100%] flex  h-[20vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[1] rounded'></video>
+                                <video src={slides1[1].url} muted autoPlay className='mt-2   w-[100%] flex  h-[20vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[1] rounded'></video>
                                 <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides1[1].sub_header}</p>
                             </div>
                         </section>

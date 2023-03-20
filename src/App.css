@@ -6,7 +6,7 @@
 }
 .App {
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   /* margin: 0 auto ; */
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -41,7 +41,7 @@
 
 .slide1 .swiper-button-prev:after{
   position: relative !important;
-  top: 150px !important;
+  top: 100px !important;
   left:560px;
   color: cyan;
 
@@ -55,24 +55,24 @@
 }
 .swiper-button-prev:after{
   position: relative !important;
-  top: 250px !important;
+  top: 210px !important;
   left:560px;
   color: cyan;}
 .swiper-button-next:after{
     position: relative !important;
-    top: 250px !important;
-    right:560px;
+    top: 210px !important;
+    right:510px;
     color: cyan;
   
   }
   .slide1 .swiper-button-prev:after{
     position: relative !important;
-    top: 180px !important;
-    left:560px;
+    top: 150px !important;
+    left:510px;
     color: cyan;}
   .slide1 .swiper-button-next:after{
       position: relative !important;
-      top: 180px !important;
+      top: 150px !important;
       right:560px;
       color: cyan;
     
@@ -117,4 +117,9 @@
 .gh:hover{
   box-shadow: 1px 1px 1px 1px ;
   background-color: aqua;
+}
+.staff{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 50px;
 }

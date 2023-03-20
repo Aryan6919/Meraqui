@@ -118,3 +118,8 @@
   box-shadow: 1px 1px 1px 1px ;
   background-color: aqua;
 }
+.staff{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 50px;
+}

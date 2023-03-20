@@ -10,7 +10,7 @@ import '../App.css'
 
 const Footer = () => {
   return (
-    <footer className=' bg-black text-white w-[100%] sm:h-fit pb-2  flex flex-col  sm:pt-8  font-poppins '>
+    <footer className=' bg-black text-white w-[100%] sm:h-fit pb-2  sm:pb-0 flex flex-col  sm:pt-8  font-poppins '>
          <div className='flex flex-col sm:flex-row sm:w-[80%]  sm:mx-auto sm:justify-center sm:mb-8 sm:pb-8'> 
             <div className='w-full sm:flex sm:flex-row sm:justify-around sm:w-[73%]'>
                 <div className=' flex flex-col w-full sm:w-[100%] sm:justify-between sm:h-[35vh] sm:text-left'>

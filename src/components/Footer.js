@@ -50,7 +50,7 @@ const Footer = () => {
                 <div className='w-[30%] '>
                     <div className='w-[100%] text-[0.85rem] sm:w-[80%] sm:flex sm:flex-col sm:justify-center' >
                         <h3 className='w-fit ml-4  border-b-[3px] border-cyan-500 sm:text-[1.3rem] font-poppins font-[400]'>Quick Links</h3>
-                        <ul className="items-left sm:leading-[40px] mt-[8px] flex flex-col justify-evenly h-40 font-poppins font-[300]  sm:text-left sm:ml-4">
+                        <ul className="items-left sm:leading-[40px] mt-[8px] flex flex-col justify-evenly h-40 font-poppins font-[300]  sm:text-left sm:ml-4 sm:mt-[21px]">
                             <li ><Link to="/services">Services</Link></li>
                             <li><Link to="/engine">karam.ai</Link></li>
                             <li><Link to="/contact">Contact Us</Link></li>

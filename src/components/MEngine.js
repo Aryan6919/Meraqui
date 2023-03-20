@@ -92,7 +92,7 @@ const MEngine = () => {
             url:"../image/whyChooseUs/COMPLIANCE.mp4",
         },
     ]
-    
+
     // console.log(content[originalIndex].url);
     
   return (
@@ -148,7 +148,7 @@ const MEngine = () => {
                         <button style={slide4 ? {height: "6px", marginBottom: "5px"} : null }  onClick={(e) => AddClass4(e)} value='3' id='btn4'  className='sm:hidden outline-none  duration-300 before:content-["4"] before:font-semibold before:text-[0.8rem] before:relative before:w-[100%] before:text-left before:-top-[20px] w-[25%] flex flex-row justify-center bg-cyan-400 h-[1.5px] '></button>   
                     </div>
                     <div className='  w-full sm:w-[100%] sm:mt-16 flex flex-col sm:h-[65vh] mt-4 sm:justify-between'>
-                        <div className='sm:min-h-[50vh] '>
+                        <div className='sm:min-h-[62vh] '>
                             <div className='w-full text-left text-2xl ml-4  sm:mb-8 sm:text-4xl'>
                                 <h3 className=''>{content[originalIndex].header1} <span className='text-cyan-300 duration-500'>{content[originalIndex].header2}</span></h3>
                             </div>

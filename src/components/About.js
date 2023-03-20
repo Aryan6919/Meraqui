@@ -89,7 +89,7 @@ const About = () => {
             </div>
           </div>
           <div className='flex flex-col  w-[90%]'>
-            <img className='sm:w-[100%]' src={require('../image/img/chiranjeev.png')} alt="photo1" />
+            <img className='sm:w-[100%]' src={require('../image/staff/chiranjeev.png')} alt="photo1" />
             <div className='flex flex-col items-center'>
               <h4 className=' font-poppins font-[400] sm:text-[26px]'>Chiranjeev Jha</h4>
               <p className=' font-poppins font-[300] sm:text-[20px]'>Business Head- Frontline Staffing</p>

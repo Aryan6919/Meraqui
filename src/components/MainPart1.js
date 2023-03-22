@@ -227,7 +227,11 @@ const MainPart1 = () => {
                     spaceBetween={30}
                     direction="vertical"
                     slidesPerView={1}
-                    mousewheel={true}
+                    mousewheel= {
+                        {forceToAxis: true,
+                        sensitivity: 1,
+                        releaseOnEdges: true,}
+                    }
                     pagination={{ clickable: true, hide: true }}
                     scrollbar={{ draggable: true, hide: true }}
 
@@ -235,7 +239,7 @@ const MainPart1 = () => {
                     creativeEffect={{
                         prev: {
                             shadow: false,
-                            translate: [0, 100, -200],
+                            translate: [0, 0, -450],
                             opacity:0.6
                         },
                         next: {
@@ -250,7 +254,7 @@ const MainPart1 = () => {
                         <section className='onHover sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg border-cyan-300 p-2'>
                             <div className=' sm:w-[100%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
                                 <div className='flex w-[100%]'>
-                                    <p className='w-[100%] sm:w-[65%] text-left sm:text-4xl font-quicksand font-[400] p-4'>
+                                    <p className='w-[100%] sm:w-[70%] text-left sm:text-4xl font-quicksand font-[400] p-4'>
                                         {slides1[0].header}
                                     </p>
                                 </div>

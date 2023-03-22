@@ -227,7 +227,11 @@ const MainPart1 = () => {
                     spaceBetween={30}
                     direction="vertical"
                     slidesPerView={1}
-                    mousewheel={true}
+                    mousewheel= {
+                        {forceToAxis: true,
+                        sensitivity: 1,
+                        releaseOnEdges: true,}
+                    }
                     pagination={{ clickable: true, hide: true }}
                     scrollbar={{ draggable: true, hide: true }}
 

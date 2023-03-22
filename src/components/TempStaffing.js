@@ -28,7 +28,7 @@ A temporary workforce may result in cost savings and increased production for yo
           <div className='w-full mb-4 sm:mb-16'>
             <h2 className='text-3xl sm:text-5xl font-quicksand font-[400]'>About service</h2>
           </div> 
-          <div className='sm:flex sm:w-full sm:mt-4'>
+          <div className='sm:flex sm:w-full sm:mt-4 mb-12 sm:mb-0'>
             <div className='sm:w-[60%] ml-2 sm:ml-20'>
               <div className='w-full flex justify-start'>
                 <h3 className='sm:text-4xl text-2xl font-poppins font-[300]'>Header</h3>
@@ -39,7 +39,7 @@ A temporary workforce may result in cost savings and increased production for yo
               <img src={require('../image/laptop.png')} alt="" />
             </div>
           </div>
-          <div className='sm:flex sm:w-full sm:mt-12'>
+          <div className='sm:flex sm:w-full sm:mt-12 mb-12 sm:mb-0'>
             <div className='sm:w-[60%] ml-2 sm:ml-20'>
               <div className='w-full flex justify-start'>
                 <h3 className='sm:text-4xl text-2xl font-poppins font-[300]'>Header</h3>
@@ -50,7 +50,7 @@ A temporary workforce may result in cost savings and increased production for yo
               <img src={require('../image/laptop.png')} alt="" />
             </div>
           </div>
-          <div className='sm:flex sm:w-full sm:mt-12'>
+          <div className='sm:flex sm:w-full sm:mt-12 mb-12 sm:mb-0'>
             <div className='sm:w-[60%] ml-2 sm:ml-20'>
               <div className='w-full flex justify-start'>
                 <h3 className='sm:text-4xl text-2xl font-poppins font-[300]'>Header</h3>
@@ -61,7 +61,7 @@ A temporary workforce may result in cost savings and increased production for yo
               <img src={require('../image/laptop.png')} alt="" />
             </div>
           </div>
-          <div className='sm:flex sm:w-full sm:mt-12'>
+          <div className='sm:flex sm:w-full sm:mt-12 mb-0 sm:mb-0'>
             <div className='sm:w-[60%] ml-2 sm:ml-20'>
               <div className='w-full flex justify-start'>
                 <h3 className='sm:text-4xl text-2xl font-poppins font-[300]'>Header</h3>

@@ -85,7 +85,7 @@ const MainPart1 = () => {
         //     sub_header:"On-The-Job Training ",
         // },
         // {
-        //     url:require('../image/whyChooseUs/Unique.webp'),
+        //     url:require('../image/whyChooseUs/Unique.jpg'),
         //     header:" 1000 workers required for your new plant? 6",
         //     body:"We can source and deploy in jiffy through our Pan India Node network on portal",
         //     sub_header:"Unique Referral Programs ",

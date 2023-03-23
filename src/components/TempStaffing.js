@@ -1,5 +1,5 @@
 import React from 'react'
-import T from '../image/whyChooseUs/Temporary.png'
+import T from '../image/whyChooseUs/Temporary.jpg'
 
 const TempStaffing = () => {
   return (

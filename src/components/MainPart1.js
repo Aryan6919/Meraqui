@@ -289,7 +289,7 @@ const MainPart1 = () => {
                             >
                                 <SwiperSlide className='pt-4 '>
                                     <div className='w-[100%] sm:w-[100%]  mb-4 relative right-[0%] bg-[#E5FBFF] '>
-                                        <img src={slides2[0].url} alt="photo1" className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[40vh] sm:w-[100%] mr-2 opacity-[1] bg-[#E5FBFF] align-middle ' />
+                                        <img src={slides2[0].url} alt="photo1" className=' pr-4 mt-2 mb-2  w-[100%] flex  h-[20vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[1] bg-[#E5FBFF] align-middle ' />
                                         {/* <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides1[0].sub_header}</p> */}
                                     </div>
                                 </SwiperSlide>

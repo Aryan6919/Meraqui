@@ -67,7 +67,7 @@ const MainPart1 = () => {
             sub_header: "Geo Fenced / Facial Recognition ",
         },
         {
-            url: require('../image/Cutting_Edge.jpg'),
+            url: require('../image/30M_Happy.jpg'),
             // header:" 1000 workers required for your new plant? 3",
             // body:"We can source and deploy in jiffy through our Pan India Node network on portal",
             sub_header: "Automated Payroll, Compliance",

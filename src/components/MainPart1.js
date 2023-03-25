@@ -56,8 +56,8 @@ const MainPart1 = () => {
     const slides2 = [
         {
             url: require('../image/30M_Happy.jpg'),
-            header: "500 Sales rep on our platform in 4 hours?",
-            body: "Cutting edge technology | end-to-end Hire & Manage Tech Platform",
+            header: "Cutting Edge Technology",
+            body: "With new-age technologies that just work, and a passionate team in place, Meraqui is fully equipped to onboard and manage hundreds of workers in no time! 'Engage' technologies help arrest attrition.",
             sub_header: "OCR-enabled Paperless",
         },
         {

@@ -251,7 +251,7 @@ const MainPart1 = () => {
 
                     <SwiperSlide className='sm:flex sm:flex-row w-[95%] mx-auto  mt-4   '>
 
-                        <section className='onHover sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg border-cyan-300 p-2 bg-[#E5FBFF]'>
+                        <section className=' sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white shadow-lg rounded-lg  p-2 bg-[#E5FBFF]'>
                             <div className=' sm:w-[100%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
                                 <div className='flex w-[100%]'>
                                     <p className='w-[100%] sm:w-[70%] text-left sm:text-4xl font-quicksand font-[400] p-4'>
@@ -300,7 +300,7 @@ const MainPart1 = () => {
                     </SwiperSlide>
                     <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto  mt-4   '>
 
-                        <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg border-cyan-300 p-2 onHover bg-[#FAEBFF]'>
+                        <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg  p-2 bg-[#FAEBFF]'>
                             <div className=' sm:w-[100%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
                                 <div className='flex w-[100%]'>
                                     <p className='w-[100%] sm:w-[65%] text-left sm:text-4xl font-quicksand font-[400] p-4'>
@@ -348,7 +348,7 @@ const MainPart1 = () => {
                     </SwiperSlide>
                     <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto  mt-4   '>
 
-                        <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg border-cyan-300 p-2 onHover bg-[#FAFFEE]'>
+                        <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg  p-2  bg-[#FAFFEE]'>
                             <div className=' sm:w-[100%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
                                 <div className='flex w-[100%]'>
                                     <p className='w-[100%] sm:w-[80%] text-left sm:text-4xl font-quicksand font-[400] p-4'>
@@ -397,7 +397,7 @@ const MainPart1 = () => {
                     </SwiperSlide>
                     <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto  mt-4   '>
 
-                        <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg onHover border-cyan-300 p-2 bg-[#FFE9E9]'>
+                        <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg rounded-lg  p-2 bg-[#FFE9E9]'>
                             <div className=' sm:w-[100%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
                                 <div className='flex w-[100%]'>
                                     <p className='w-[100%] sm:w-[65%] text-left sm:text-4xl font-quicksand font-[400] p-4'>

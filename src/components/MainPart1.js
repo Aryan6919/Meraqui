@@ -61,7 +61,7 @@ const MainPart1 = () => {
             sub_header: "OCR-enabled Paperless",
         },
         {
-            url: require('../image/workers_required.jpg'),
+            url: require('../image/Cutting_Edge.jpg'),
             // header:" 1000 workers required for your new plant? 2",
             // body:"We can source and deploy in jiffy through our Pan India Node network on portal",
             sub_header: "Geo Fenced / Facial Recognition ",

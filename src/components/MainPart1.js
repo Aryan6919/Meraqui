@@ -337,7 +337,7 @@ const MainPart1 = () => {
 
                             >
                                 <SwiperSlide className='pt-4 bg-white'>
-                                    <div className='w-[100%] sm:w-[100%]  mb-4 relative right-[0%] '>
+                                    <div className='w-[100%] sm:w-[100%]  mb-4 relative right-[0%] bg-[#FAEBFF] '>
                                         <img src={slides2[1].url} alt="photo1" className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] bg-[#FAEBFF] ' />
                                         {/* <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides2[0].sub_header}</p> */}
                                     </div>
@@ -385,7 +385,7 @@ const MainPart1 = () => {
 
                             >
                                 <SwiperSlide className='pt-4 bg-white'>
-                                    <div className='w-[100%] sm:w-[100%]  mb-4 relative right-[0%] '>
+                                    <div className='w-[100%] sm:w-[100%]  mb-4 relative right-[0%] bg-[#FAFFEE]'>
                                         <img src={slides2[2].url} alt="photo1" className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] bg-[#FAFFEE]' />
                                         {/* <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides3[0].sub_header}</p> */}
                                     </div>
@@ -434,7 +434,7 @@ const MainPart1 = () => {
 
                             >
                                 <SwiperSlide className='pt-4 bg-white'>
-                                    <div className='w-[100%] sm:w-[100%]  mb-4 relative right-[0%] '>
+                                    <div className='w-[100%] sm:w-[100%]  mb-4 relative right-[0%] bg-[#FFE9E9] '>
                                         <img src={slides2[3].url} alt="photo1" className=' pr-4 mt-2   w-[100%] flex  h-[20vh] sm:h-[45vh] sm:w-[100%] mr-2 opacity-[1] bg-[#FFE9E9] ' />
                                         {/* <p className='w-[95%] text-[1rem] relative top-[2%] text-left text-black left-[3%] sm:top-[3%] sm:left-[3%] font-poppins font-[400] z-[99] sm:text-2xl'>{slides4[0].sub_header}</p> */}
                                     </div>

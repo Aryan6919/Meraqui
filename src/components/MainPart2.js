@@ -172,7 +172,7 @@ title:"FMCG"
               </div>
         </div>
         <Swiper 
-        className=' rounded sm:w-[100%] sm:h-[70vh] slide1'
+        className='sm:w-[100%] sm:h-[70vh] slide1'
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={1}
@@ -186,105 +186,117 @@ title:"FMCG"
           
           <div className=' mt-10  h-[30vh] w-full m-auto px-4 relative group sm:h-[40vh] sm:font-normal'>
               <div style={{backgroundImage:`url(${slides[0].url})`}} className='  bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] sm:h-full duration-500'>
-                <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
+                {/* <div className= ' align-bottom flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
                    <h3 className='text-center absolute top-[45%] text-3xl font-poppins font-[300] sm:text-3xl  ' >{slides[0].title}</h3> 
-                </div>
+                </div> */}
               </div>
           </div>    
-          
+          <h3 className=' font-semibold text-2xl font-poppins font-bold-[300] sm:text-2xl pt-120 mt-2 ' >{slides[0].title}</h3> 
         </SwiperSlide>
         
         <SwiperSlide>
           
           <div className=' mt-10  h-[30vh] w-full m-auto px-4 relative group sm:h-[40vh] sm:font-normal'>
               <div style={{backgroundImage:`url(${slides[1].url})`}} className='  bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] sm:h-full duration-500'>
-                <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
+                {/* <div className= '  flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
                   <h3 className='text-center absolute top-[45%] text-3xl font-poppins font-[300] sm:text-3xl  ' >{slides[1].title}</h3>
-                </div>
+                </div> */}
               </div>
-          </div>    
+          </div>  
+          <h3 className=' font-semibold text-2xl font-poppins font-bold-[300] sm:text-2xl pt-120 mt-2  ' >{slides[1].title}</h3>  
         </SwiperSlide>
         <SwiperSlide>
           
           <div className=' mt-10  h-[30vh] w-full m-auto px-4 relative group sm:h-[40vh] sm:font-normal'>
-              <div style={{backgroundImage:`url(${slides[2].url})`}} className='  bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] sm:h-full duration-500'>
-                <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
-                  <h3 className='text-center absolute top-[45%] text-3xl font-poppins font-[300] sm:text-3xl  ' >{slides[2].title}</h3>
-                </div>
+              <div style={{backgroundImage:`url(${slides[2].url})`}} className='  bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] sm:h-full duration-500 '>
+                {/* <div className= ' pt-90 text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'> */}
+                  {/* <h3 className='   text-3xl font-poppins font-[300] sm:text-3xl pt-60 ' >{slides[2].title}</h3> */}
+                {/* </div> */}
               </div>
           </div>    
+          {/* <div className= ' pt-120 text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6]'>  */}
+                  <h3 className='  font-semibold text-2xl font-poppins font-bold-[300] sm:text-2xl pt-120 mt-2 ' >{slides[2].title}</h3>
+                
+                  
         </SwiperSlide>
         <SwiperSlide>
           
           <div className=' mt-10  h-[30vh] w-full m-auto px-4 relative group sm:h-[40vh] sm:font-normal'>
               <div style={{backgroundImage:`url(${slides[3].url})`}} className='  bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] sm:h-full duration-500'>
-                <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
+                {/* <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
                   <h3 className='text-center absolute top-[45%] text-3xl font-poppins font-[300] sm:text-3xl  ' >{slides[3].title}</h3>
-                </div>
+                </div> */}
               </div>
-          </div>    
+          </div>   
+          <h3 className=' font-semibold text-2xl font-poppins font-bold-[300] sm:text-2xl pt-120 mt-2 ' >{slides[3].title}</h3> 
         </SwiperSlide>
         <SwiperSlide>
           
           <div className=' mt-10  h-[30vh] w-full m-auto px-4 relative group sm:h-[40vh] sm:font-normal'>
               <div style={{backgroundImage:`url(${slides[4].url})`}} className='  bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] sm:h-full duration-500'>
-                <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
+                {/* <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
                   <h3 className='text-center absolute top-[45%] text-3xl font-poppins font-[300] sm:text-3xl  ' >{slides[4].title}</h3>
-                </div>
+                </div> */}
               </div>
           </div>    
+          <h3 className='font-semibold text-2xl font-poppins font-bold-[300] sm:text-2xl pt-120 mt-2 ' >{slides[4].title}</h3>
         </SwiperSlide>
         <SwiperSlide>
           
           <div className=' mt-10  h-[30vh] w-full m-auto px-4 relative group sm:h-[40vh] sm:font-normal'>
               <div style={{backgroundImage:`url(${slides[5].url})`}} className='  bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] sm:h-full duration-500'>
-                <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
+                {/* <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
                   <h3 className='text-center absolute top-[45%] text-3xl font-poppins font-[300] sm:text-3xl  ' >{slides[5].title}</h3>
-                </div>
+                </div> */}
               </div>
           </div>    
+          <h3 className='font-semibold text-2xl font-poppins font-bold-[300] sm:text-2xl  pt-120 mt-2' >{slides[5].title}</h3>
         </SwiperSlide>
         <SwiperSlide>
           
           <div className=' mt-10  h-[30vh] w-full m-auto px-4 relative group sm:h-[40vh] sm:font-normal'>
               <div style={{backgroundImage:`url(${slides[6].url})`}} className='  bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] sm:h-full duration-500'>
-                <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
+                {/* <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
                   <h3 className='text-center absolute top-[45%] text-3xl font-poppins font-[300] sm:text-3xl  ' >{slides[6].title}</h3>
-                </div>
+                </div> */}
               </div>
-          </div>    
+          </div>   
+          <h3 className='font-semibold text-2xl font-poppins font-bold-[300] sm:text-2xl pt-120 mt-2 ' >{slides[6].title}</h3> 
         </SwiperSlide>
         <SwiperSlide>
           
           <div className=' mt-10  h-[30vh] w-full m-auto px-4 relative group sm:h-[40vh] sm:font-normal'>
               <div style={{backgroundImage:`url(${slides[7].url})`}} className='  bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] sm:h-full duration-500'>
-                <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
+                {/* <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
                   <h3 className='text-center absolute top-[45%] text-3xl font-poppins font-[300] sm:text-3xl  ' >{slides[7].title}</h3>
-                </div>
+                </div> */}
               </div>
           </div>    
+          <h3 className='font-semibold text-2xl font-poppins font-bold-[300] sm:text-2xl pt-120 mt-2 ' >{slides[7].title}</h3>
         </SwiperSlide>
         <SwiperSlide>
           
-          <div className=' mt-10  h-[30vh] w-full m-auto px-4 relative group sm:h-[40vh] sm:font-normal mb-10'>
+          <div className=' mt-10  h-[30vh] w-full m-auto px-4 relative group sm:h-[40vh] sm:font-normal mb-2'>
               <div style={{backgroundImage:`url(${slides[8].url})`}} className='  bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] sm:h-full duration-500'>
-                <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
+                {/* <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
                   <h3 className='text-center absolute top-[45%] text-3xl font-poppins font-[300] sm:text-3xl  ' >{slides[8].title}</h3>
-                </div>
+                </div> */}
               </div>
           </div>    
+          <h3 className='font-semibold text-2xl font-poppins font-bold-[300] sm:text-2xl' >{slides[8].title}</h3>
         </SwiperSlide>
         <SwiperSlide>
           
-          <div className=' mt-10  h-[30vh] w-full m-auto px-4 relative group sm:h-[40vh] sm:font-normal mb-10'>
+          <div className=' mt-10  h-[30vh] w-full m-auto px-4 relative group sm:h-[40vh] sm:font-normal mb-2'>
               <div style={{backgroundImage:`url(${slides[9].url})`}} className='  bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] sm:h-full duration-500'>
-                <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
+                {/* <div className= ' relative flex justify-center self-center  text-white w-full h-[25vh] sm:h-[40vh] bg-opacity-[0.6] bg-black'>
                   <h3 className='text-center absolute top-[45%] text-3xl font-poppins font-[300] sm:text-3xl  ' >{slides[9].title}</h3>
-                </div>
+                </div> */}
               </div>
           </div>    
+          <h3 className='font-semibold text-2xl font-poppins font-bold-[300] sm:text-2xl' >{slides[9].title}</h3>
         </SwiperSlide>
-        
+        {/* <h3 className='font-bold text-2xl font-poppins font-bold-[300] sm:text-2xl pt-120 mt-2 ' >{slides[9].title}</h3> */}
       </Swiper>
       </section>
       {/* <section className='hidden sm:block mt-16'>
@@ -412,7 +424,7 @@ title:"FMCG"
                       <h3>{newsInfo[0].caption}</h3>
                     </div>
                     <div className='text-left text-[0.8rem] mt-4  '>
-                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden leading-[1.8] text-justify duration-500'>{newsInfo[0].content}</p>
+                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden leading-[1.9] text-justify duration-500'>{newsInfo[0].content}</p>
                     </div>
                     <div className='text-right flex flex-row justify-end w-full sm:justify-none sm:mb-4 sm:text-right'>
                     {/* <a href='https://www.aninews.in/news/business/business/co-founders-shalin-maheshwari-lalit-singh-setting-new-benchmark-for-helping-blue-collar-workforce-through-their-startup-meraqui20220520185135/' target='blank'><FaLinkedin className='text-[4rem]  w-[50%] text-cyan-300' /></a> */}
@@ -432,7 +444,7 @@ title:"FMCG"
                       <h3>{newsInfo[1].caption}</h3>
                     </div>
                     <div className='text-left text-[0.8rem] mt-4  '>
-                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden text-justify leading-[1.8]  duration-500'>{newsInfo[1].content}</p>
+                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden text-justify leading-[1.9]  duration-500'>{newsInfo[1].content}</p>
                     </div>
                     <div className='text-right flex flex-row justify-end w-full sm:justify-none sm:mb-4 sm:text-right'>
                      {/* <a href='https://www.englandnewsportal.com/news/co-founders-shalin-maheshwari-lalit-singh-setting-new-benchmark-for-helping-blue-collar-workforce-through-their-startup-meraqui20220520185127/' target='blank'><FaLinkedin className='text-[4rem]  w-[50%] text-cyan-300' /></a> */} 
@@ -451,7 +463,7 @@ title:"FMCG"
                       <h3>{newsInfo[2].caption}</h3>
                     </div>
                     <div className='text-left text-[0.8rem] mt-4 '>
-                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden leading-[1.8] text-justify duration-500'>{newsInfo[2].content}</p>
+                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden leading-[1.9] text-justify duration-500'>{newsInfo[2].content}</p>
                     </div>
                     <div className='text-right flex flex-row justify-end w-full sm:justify-none sm:mb-4 sm:text-right'>
                     {/* <a href='https://www.zee5.com/articles/co-founders-shalin-maheshwari-lalit-singh-setting-new-benchmark-for-helping-blue-collar-workforce-through-their-startup-meraqui' target='blank'><FaLinkedin className='text-[4rem]  w-[50%] text-cyan-300' /></a> */}
@@ -470,7 +482,7 @@ title:"FMCG"
                       <h3>{newsInfo[3].caption}</h3>
                     </div>
                     <div className='text-left text-[0.8rem] mt-4 '>
-                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden leading-[1.8] text-justify duration-500'>{newsInfo[3].content}</p>
+                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden leading-[1.9] text-justify duration-500'>{newsInfo[3].content}</p>
                     </div>
                     <div className='text-right flex flex-row justify-end w-full sm:justify-none sm:mb-4 sm:text-right'>
                     {/* <a href='https://www.londonchannelnews.com/news/co-founders-shalin-maheshwari-lalit-singh-setting-new-benchmark-for-helping-blue-collar-workforce-through-their-startup-meraqui202205201851' target='blank'><FaLinkedin className='text-[4rem]  w-[50%] text-cyan-300' /></a> */}

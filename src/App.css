@@ -38,45 +38,101 @@
   height: 4px;
   margin-bottom: 5px;
 }
-
-.slide1 .swiper-button-prev:after{
+.slide1 > .swiper-button-next{
+  top: 379px !important;
+  right: 500px !important;
+  border-radius: 50% !important;
+  box-shadow: 0px 3px 9px -2px black;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 2px;
+}
+.slide1 > .swiper-button-prev{
+  top: 378px !important;
+  left: 500px !important;
+  /* border: 1px white solid; */
+  border-radius: 50% !important;
+  box-shadow: 0px 3px 9px -2px black;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 2px;
+}
+.slide2 > .swiper-button-next{
+  top: 500px !important;
+  right: 500px !important;
+  border-radius: 50% !important;
+  border-radius: 50% !important;
+  box-shadow: 0px 3px 9px -2px black;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 2px;
+}
+.slide2 > .swiper-button-prev{
+  top: 500px !important;
+  left: 500px !important;
+  /* border: 1px white solid; */
+  border-radius: 50% !important;
+  box-shadow: 0px 3px 9px -2px black;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 2px;
+}
+/* .slide1 .swiper-button-prev:after{
   position: relative !important;
   top: 100px !important;
   left:560px;
   color: cyan;
 
-}
-.slide1 > .swiper-button-next:after{
+} */
+/* .slide1 > .swiper-button-next:after{
   position: relative !important;
   top: 150px !important;
   right:560px;
   color: cyan;
 
-}
+} */
 .swiper-button-prev:after{
   position: relative !important;
-  top: 210px !important;
-  left:560px;
-  color: cyan;}
+  top: 0px !important;
+  left:-3px;
+  color: cyan;
+  font-size: 36px !important;
+}
 .swiper-button-next:after{
     position: relative !important;
-    top: 210px !important;
-    right:510px;
+    top: 0px !important;
+    right:-3px;
     color: cyan;
+    font-size: 36px !important;
   
   }
   .slide1 .swiper-button-prev:after{
     position: relative !important;
-    top: 150px !important;
-    left:510px;
-    color: cyan;}
+    top: 0px !important;
+    left: -3px;
+    color: cyan;
+    font-size: 36px !important;
+  }
   .slide1 .swiper-button-next:after{
       position: relative !important;
-      top: 150px !important;
-      right:560px;
+      top: 0px !important;
+      right: -3px;
       color: cyan;
+      font-size: 36px !important;
+}
     
-    }
 
 .swiper-pagination-bullets {
   display: none;}

@@ -16,7 +16,7 @@ const neemNaps = () => {
                         <h1 className='font-quicksand font-[400] text-4xl text-left sm:text-5xl w-[75%] sm:w-[95%] sm:leading-[1.4] sm:mb-8'>
                             NAPS AND NATS
                         </h1>
-                        <p className='text-left sm:w-[98%] mt-4 sm:mt-0 font-poppins font-[300]'>
+                        <p className='text-left sm:w-[98%] mt-4 sm:mt-0 font-poppins font-[300] sm:text-[1.2rem]'>
                         
                         NAPS(NAPS is a scheme of the Government of India to promote apprenticeship. Apprenticeship Training consists of Basic Training and On-The-Job Training at the workplace in the industry. Meraqui helps to promote apprenticeship training and increase the engagement of apprentices so that they could later join the mainstream workforce.)
                         <br></br>

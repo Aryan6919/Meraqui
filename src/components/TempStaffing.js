@@ -12,7 +12,7 @@ const TempStaffing = () => {
                             Temporary 
                             Staffing
                         </h1>
-                        <p className='text-left sm:w-[98%] mt-4 sm:mt-0 font-poppins font-[300]'>
+                        <p className='text-left sm:w-[98%] mt-4 sm:mt-0 font-poppins font-[300] sm:text-[1.2rem]'>
                         
 A temporary workforce may result in cost savings and increased production for your company. Meraqui provides dependable temporary staffing solutions that allow you to increase your staff strength without taking on full-time personnel, support overburdened employees at important moments, and keep projects going. 
 

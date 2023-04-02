@@ -404,7 +404,7 @@ title:"FMCG"
             </div> */}
         </div>
         <Swiper
-        className='h-[90vh] '
+        className='h-[90vh] slide2'
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={10}

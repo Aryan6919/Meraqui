@@ -570,7 +570,7 @@ title:"FMCG"
             <div style={{backgroundImage:`url(${newsInfo[newsIndex].url})`}} className=' bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] duration-500 sm:w-[40%] sm:h-full'>
             </div>
             <div className='w-full flex flex-col justify-evenly h-[55vh] mt-8 sm:w-[50%] sm:justify-evenly sm:mx-auto sm:h-full px-2'>
-              <div className='text-left w-[100%] text-[1.55rem] sm:text-[1.8rem] h-[25vh]  font-poppins font-[300]  font-bold [300] flex justify-center flex-col mt-4'>
+              <div className='text-left w-[100%] text-[1.55rem] sm:text-[1.8rem] h-[25vh]  font-poppins font-bold [300] flex justify-center flex-col mt-4'>
                 <h3 className='w-full h-[10vh]'>{newsInfo[newsIndex].caption}</h3>
               </div>
               <div className='text-left text-[1rem] mt-4 sm:font-semibold'>

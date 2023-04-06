@@ -438,7 +438,7 @@ title:"FMCG"
             <p className='text-[1rem] font-poppins font-[300] sm:text-[1.3rem] w-[75%] '>We are bridging the gap between employees and businesses since 2019!</p>
           </div> */}
         </div>
-        <div className=' relative lg:bottom-[45%] mt-0 h-[85vh] mx-auto     group shadow-md w-[90%] sm:flex sm:flex-row  bg-cyan-100 sm:h-[55vh]'>
+        <div className=' relative lg:bottom-[45%] mt-0 h-[85vh] mx-auto     group shadow-md w-[90%] sm:flex sm:flex-row sm:h-[55vh]'>
             <div style={{backgroundImage:`url(${newsInfo[newsIndex].url})`}} className=' bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] duration-500 sm:w-[40%] sm:h-full'>
             </div>
             <div className='w-full flex flex-col justify-evenly h-[55vh] mt-8 sm:w-[50%] sm:justify-evenly sm:mx-auto sm:h-full px-2'>

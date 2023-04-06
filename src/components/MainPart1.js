@@ -93,7 +93,8 @@ const MainPart1 = () => {
     ]
     const slides3 = [
         {
-            url: require('../image/whyChooseUs/Jobtraining.webp'),
+            
+            url: require('../image/30M_Happy.jpg'),
             header: "30M + Happy Man Hours Managed Till Date ",
             body: "We can source and deploy in jiffy through our Pan India Node network on portal",
             sub_header: "On-The-Job Training ",
@@ -492,7 +493,7 @@ const MainPart1 = () => {
                     <SwiperSlide className='flex flex-row w-[95%] sm:-[100%] mx-auto  mt-4'>
                         <section className='flex sm:w-[100%] flex-col h-[55vh] w-[95%] mx-auto  mt-4 '>
                             <div className='w-[100%] sm:w-[100%] h-[35vh]'>
-                                <img src={slides2[0].url} alt="photo1" className='mt-2   w-[100%] flex  h-[30vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[0.7] rounded' />
+                                <img src={slides2[1].url} alt="photo1" className='mt-2   w-[100%] flex  h-[30vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[0.7] rounded' />
                                 
                             </div>
                             <div className=' w-[100%] flex flex-col justify-center mt-8'>

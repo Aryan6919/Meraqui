@@ -38,7 +38,7 @@ const About = () => {
               </h3> */}
             </div>
             <div className='w-[95%] sm:w-[89%]  my-4'>
-              <p className='text-center sm:w-[85%] font-poppins font-[300] line-spacing-[1.5] ml-40'>
+              <p className='text-center sm:w-[85%] font-poppins font-[300] line-spacing-[1.5] sm:ml-40 sm:mr-20'>
                 We believe that "The greatest asset of a company is its people” 
                 <br></br>
                 <br></br>

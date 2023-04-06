@@ -472,7 +472,7 @@ const MainPart1 = () => {
                     <SwiperSlide className='flex flex-row w-[95%] sm:-[100%] mx-auto  mt-4'>
                         <section className='flex sm:w-[100%] flex-col h-[65vh] w-[95%] mx-auto  mt-4 '>
                             <div className='w-[100%] sm:w-[100%] h-[35vh]'>
-                                <img src={slides1[0].url} alt="photo1" className='mt-2   w-[100%] flex  h-[30vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[0.7] rounded' />
+                                <img src={slides2[3].url} alt="photo1" className='mt-2   w-[100%] flex  h-[30vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[0.7] rounded' />
                                 
                             </div>
                             <div className=' w-[100%] flex flex-col justify-center'>
@@ -492,7 +492,7 @@ const MainPart1 = () => {
                     <SwiperSlide className='flex flex-row w-[95%] sm:-[100%] mx-auto  mt-4'>
                         <section className='flex sm:w-[100%] flex-col h-[55vh] w-[95%] mx-auto  mt-4 '>
                             <div className='w-[100%] sm:w-[100%] h-[35vh]'>
-                                <img src={slides1[0].url} alt="photo1" className='mt-2   w-[100%] flex  h-[30vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[0.7] rounded' />
+                                <img src={slides2[2].url} alt="photo1" className='mt-2   w-[100%] flex  h-[30vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[0.7] rounded' />
                                 
                             </div>
                             <div className=' w-[100%] flex flex-col justify-center mt-8'>
@@ -512,7 +512,7 @@ const MainPart1 = () => {
                     <SwiperSlide className='flex flex-row w-[95%] sm:-[100%] mx-auto  mt-4'>
                         <section className='flex sm:w-[100%] flex-col h-[55vh] w-[95%] mx-auto  mt-4 '>
                             <div className='w-[100%] sm:w-[100%] h-[35vh]'>
-                                <img src={slides3[0].url} alt="photo1" className='mt-2   w-[100%] flex  h-[30vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[0.7] rounded' />
+                                <img src={slides2[1].url} alt="photo1" className='mt-2   w-[100%] flex  h-[30vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[0.7] rounded' />
                                 
                             </div>
                             <div className=' w-[100%] flex flex-col justify-center'>
@@ -532,7 +532,7 @@ const MainPart1 = () => {
                     <SwiperSlide className='flex flex-row w-[95%] sm:-[100%] mx-auto  mt-4'>
                         <section className='flex sm:w-[100%] flex-col h-[55vh] w-[95%] mx-auto  mt-4 '>
                             <div className='w-[100%] sm:w-[100%] h-[35vh]'>
-                                <img src={slides1[0].url} alt="photo1" className='mt-2   w-[100%] flex  h-[30vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[0.7] rounded' />
+                                <img src={slides2[4].url} alt="photo1" className='mt-2   w-[100%] flex  h-[30vh] sm:h-[50vh] sm:w-[100%] mr-2 opacity-[0.7] rounded' />
                                 
                             </div>
                             <div className=' w-[100%] flex flex-col justify-center mt-8'>

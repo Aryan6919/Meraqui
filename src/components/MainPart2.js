@@ -299,103 +299,9 @@ title:"FMCG"
         {/* <h3 className='font-bold text-2xl font-poppins font-bold-[300] sm:text-2xl pt-120 mt-2 ' >{slides[9].title}</h3> */}
       </Swiper>
       </section>
-      {/* <section className='hidden sm:block mt-16'>
-        <div className='w-full flex flex-col sm:h-[13vh] h-[25vh]'>
-            <div className='w-full'>
-              <h3 className='w-full text-3xl  sm:text-5xl font-poppins font-[300]'>Find us on our socials</h3>
-            </div>
-            <div className='w-full flex justify-center mt-2 sm:mt-4'> 
-              <p className='text-[1rem]  sm:text-[1.3rem] w-[75%] font-poppins font-[300]'>We are bridging the gap between employees and businesses since 2019!</p>
-            </div>
-        </div>
-        <Swiper
-        className='h-[80vh]'
-          // install Swiper modules
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={10}
-          slidesPerView={3}
-          navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true ,hide:true}}
-          // onSwiper={(swiper) => console.log(swiper)}
-          // onSlideChange={() => console.log('slide change')}
-        >
-          <SwiperSlide className='rounded-[12px]'>
-              <div className='rounded-[12px] mt-10  h-full pb-8 sm:pb-0 mx-auto relative    group shadow-md w-[100%] sm:flex sm:flex-col  bg-cyan-100 sm:h-[60vh]'>
-                  <div style={{backgroundImage:`url(${postInfo[0].url})`}} className='rounded-[12px]  bg-cover  w-[100%] h-[25vh]  sm:w-[100%] sm:h-[90vh] '>
-                  </div>
-                  <div className='w-full flex flex-col justify-evenly sm:h-[25vh] mt-8 sm:w-[100%] sm:justify-evenly sm:mx-auto px-2'>
-                    <div className='text-left text-[1.3rem] font-poppins font-[300] sm:w-[100%]'>
-                      <h3>{postInfo[0].caption}</h3>
-                    </div>
-                    <div className='text-left text-[0.8rem] mt-4  '>
-                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden text-justify duration-500 leading-[1.6]'>{postInfo[0].content}</p>
-                    </div>
-                    <div className='text-right flex flex-row justify-end w-full sm:justify-none sm:mb-4 sm:text-right'>
-                    <a className='w-full flex justify-end mb-4' href=' https://www.linkedin.com/company/meraquii' target='blank'><FaLinkedin className='text-[2.4rem] text-right  w-[15%]  text-cyan-300' /></a>
-                      {/* <a href=" https://www.linkedin.com/company/meraquii"  ><FaLinkedin className='text-4xl mb-2 w-[20%] text-cyan-300'/></a> */}
-                    {/* </div> */}
-                  {/* </div>
-              </div> */} 
-           {/* </SwiperSlide> */}
-          {/* <SwiperSlide>
-              <div className='rounded-[12px] mt-10  h-full pb-8 sm:pb-0 mx-auto relative    group shadow-md w-[100%] sm:flex sm:flex-col  bg-cyan-100 sm:h-[60vh]'>
-                  <div style={{backgroundImage:`url(${postInfo[1].url})`}} className='rounded-[12px]  bg-cover  w-[100%] h-[25vh]  sm:w-[100%] sm:h-[90vh] '>
-                  </div>
-                  <div className='w-full flex flex-col justify-evenly sm:h-[25vh] mt-8 sm:w-[100%] sm:justify-evenly sm:mx-auto px-2'>
-                    <div className='text-left text-[1.3rem] font-poppins font-[300] sm:w-[100%]'>
-                      <h3>{postInfo[1].caption}</h3>
-                    </div>
-                    <div className='text-left text-[0.8rem] mt-4  '>
-                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden text-justify duration-500 leading-[1.6]'>{postInfo[1].content}</p>
-                    </div>
-                    <div className='text-right flex flex-row justify-end w-full sm:justify-none sm:mb-4 sm:text-right'>
-                    <a className='w-full flex justify-end mb-4' href=' https://www.linkedin.com/company/meraquii' target='blank'><FaLinkedin className='text-[2.4rem] text-right  w-[15%]  text-cyan-300' /></a>
-                      {/* <FaLinkedin className='text-4xl mb-2 w-[20%] text-cyan-300' a href=" https://www.linkedin.com/company/meraquii"/> */}
-                    {/* </div>
-                  </div>
-              </div>
-          </SwiperSlide>
-          <SwiperSlide>
-              <div className='rounded-[12px]  mt-10  h-full pb-8 sm:pb-0 mx-auto relative    group shadow-md w-[100%] sm:flex sm:flex-col  bg-cyan-100 sm:h-[60vh]'>
-                  <div style={{backgroundImage:`url(${postInfo[2].url})`}} className='rounded-[12px]  bg-cover  w-[100%] h-[25vh]  sm:w-[100%] sm:h-[90vh] '>
-                  </div>
-                  <div className='w-full flex flex-col justify-evenly sm:h-[25vh] mt-8 sm:w-[100%] sm:justify-evenly sm:mx-auto px-2'>
-                    <div className='text-left text-[1.3rem] font-poppins font-[300] sm:w-[100%]'>
-                      <h3>{postInfo[2].caption}</h3>
-                    </div>
-                    <div className='text-left text-[0.8rem] mt-4 '>
-                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden text-justify duration-500 leading-[1.6]'>{postInfo[2].content}</p>
-                    </div>
-                    <div className='text-right flex flex-row justify-end w-full sm:justify-none sm:mb-4 sm:text-right'>
-                    <a className='w-full flex justify-end mb-4' href=' https://www.linkedin.com/company/meraquii' target='blank'><FaLinkedin className='text-[2.4rem] text-right  w-[15%]  text-cyan-300' /></a>
-                      {/* <FaLinkedin className='text-4xl mb-2 w-[20%] text-cyan-300' a href=" https://www.linkedin.com/company/meraquii"/> */}
-                    {/* </div>
-                  </div>
-              </div>
-          </SwiperSlide>
-          <SwiperSlide> */}
-              {/* <div className='rounded-[12px]  mt-10  h-full pb-8 sm:pb-0 mx-auto relative    group shadow-md w-[100%] sm:flex sm:flex-col  bg-cyan-100 sm:h-[60vh]'>
-                  <div style={{backgroundImage:`url(${postInfo[3].url})`}} className='rounded-[12px]  bg-cover  w-[100%] h-[25vh]  sm:w-[100%] sm:h-[90vh] '>
-                  </div>
-                  <div className='w-full flex flex-col justify-evenly sm:h-[25vh] mt-8 sm:w-[100%] sm:justify-evenly sm:mx-auto px-2'>
-                    <div className='text-left text-[1.3rem] font-poppins font-[300] sm:w-[100%]'>
-                      <h3>{postInfo[3].caption}</h3>
-                    </div>
-                    <div className='text-left text-[0.8rem] mt-4 '>
-                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden text-justify duration-500 leading-[1.6]'>{postInfo[3].content}</p>
-                    </div>
-                    <div className='text-right flex flex-row justify-end w-full sm:justify-none sm:mb-4 sm:text-right'> */}
-                    {/* <a className='w-full flex justify-end mb-4' href=' https://www.linkedin.com/company/meraquii' target='blank'><FaLinkedin className='text-[2.4rem] text-right  w-[15%]  text-cyan-300' /></a> */}
-                      {/* <FaLinkedin className='text-4xl mb-2 w-[20%] text-cyan-300' a href=" https://www.linkedin.com/company/meraquii" /> */}
-                    {/* </div>
-                  </div>
-              </div>
-          </SwiperSlide>
-        </Swiper>
-      </section>  */}
+      
       <section className='hidden sm:block mt-12 sm:h-[90vh]'>
-        <div className='w-full flex flex-col sm:h-[13vh] h-[25vh]'>
+        <div className='w-full flex flex-col sm:h-[6vh] h-[0vh]'>
             <div className='w-full'>
               <h3 className='w-full text-3xl  sm:text-5xl font-poppins font-[300]'>Meraqui in news</h3>
             </div>
@@ -504,7 +410,7 @@ title:"FMCG"
             <p className=' text-[1rem]  sm:text-[1.3rem] w-[75%] font-poppins font-[300]'>We are bridging the gap between employees and businesses since 2019!</p>
           </div>  */}
         </div>
-        <div className=' mt-10  h-[30vh] w-full m-auto px-4 relative group sm:h-[60vh] sm:font-normal'>
+        <div className=' mt-8  h-[30vh] w-full m-auto px-4 relative group sm:h-[60vh] sm:font-normal'>
             <div style={{backgroundImage:`url(${slides[currentIndex].url})`}} className=' rounded bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] sm:h-full duration-500'>
               <div className= ' relative flex justify-center self-center rounded text-white w-full h-[25vh] sm:h-[60vh] bg-opacity-[0.6] bg-black'>
                 <h3 className='text-center absolute top-[45%] text-3xl font-poppins font-[300] sm:text-5xl  ' >{slides[currentIndex].title}</h3>
@@ -521,41 +427,7 @@ title:"FMCG"
             </div>
           </div>
       </section>
-      {/* <section className=' sm:hidden w-full mt-12 h-fill sm:mt-36 sm:h-[80vh]'>
-      <div className='w-full flex flex-col sm:h-[16vh] h-[25vh]'>
-          <div className='w-full'>
-            <h3 className='w-full text-3xl font-poppins font-[300] sm:text-5xl'>Find us on our socials</h3>
-          </div>
-          <div className='w-full flex justify-center mt-2 sm:m-6'> 
-            <p className='text-[1rem] font-poppins font-[300] sm:text-[1.3rem] w-[75%]'>We are bridging the gap between employees and businesses since 2019!</p>
-          </div>
-        </div>
-        <div className=' mt-[-30px] h-full pb-8 sm:pb-0 mx-auto relative    group shadow-md w-[90%] sm:flex sm:flex-row  bg-cyan-100 sm:h-[60vh]'>
-            <div style={{backgroundImage:`url(${postInfo[postIndex].url})`}} className=' bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] duration-500 sm:w-[40%] sm:h-full '>
-            </div>
-            <div className='w-full flex flex-col justify-evenly h-full mt-8 sm:w-[50%] sm:justify-evenly sm:mx-auto sm:h-full px-2'>
-              <div className='text-left text-[1.55rem] sm:text-[1.8rem]  font-poppins font-[300]'>
-                <h3>{postInfo[postIndex].caption}</h3>
-              </div>
-              <div className='text-left text-[1rem] mt-4 sm:font-semibold '>
-                <p className='font-poppins font-[500] sm:h-[30vh] h-[25vh] overflow-y-auto overflow-x-hidden text-justify duration-500'>{postInfo[postIndex].content}</p>
-              </div>
-              <div className='text-right flex flex-row justify-end w-full sm:justify-none sm:mb-4 sm:text-right'>
-                <a className='text-6xl w-[100%] relative bottom-[5%] flex justify-end ' href='https://www.linkedin.com/company/meraquii'><FaLinkedin className='text-5xl w-[20%] text-cyan-300 sm:text-right sm:ml-8 sm:w-[50%]' /></a>
-              </div>
-            </div> */}
-            {/* left arrow */}
-            {/* <div className='sm:bg-opacity-[0.3] bg-opacity-[0.9] sm:hidden sm:group-hover:block absolute top-[35%] sm:top-[50%] -translate-x-0 translate-y-[-50%] left-5  text-2xl rounded-full p-2 bg-white text-cyan-400 cursor-pointer'>
-              <BsChevronCompactLeft onClick={() => prevPost()} className="sm:hidden" size={30}/>
-              <BsChevronCompactLeft onClick={() => prevPost()} className=" hidden sm:block" size={50}/>
-            </div>
-            <div className='  sm:bg-opacity-[0.3] bg-opacity-[0.9] sm:hidden sm:group-hover:block absolute top-[35%] sm:top-[50%] translate-x-0 translate-y-[-50%] right-5 sm:right-0 text-2xl rounded-full p-2 bg-white text-cyan-400 cursor-pointer'>
-              <BsChevronCompactRight onClick={() => nextPost()}  className='sm:hidden' size={30}t/>
-              <BsChevronCompactRight onClick={() => nextPost()}  className='hidden sm:block' size={50}t/>
-            </div>
-          </div>
-      </section> */}
-      {/* <section className=' sm:hidden w-full mt-24 h-full sm:mt-[12rem] sm:h-[80vh] sm:mb-6'> */}
+      
       <section className=' sm:hidden w-full mt-12 h-fill sm:mt-36 sm:h-[80vh]'>
       <div className='w-full flex flex-col '>
           <div className='w-full'>
@@ -566,11 +438,11 @@ title:"FMCG"
             <p className='text-[1rem] font-poppins font-[300] sm:text-[1.3rem] w-[75%] '>We are bridging the gap between employees and businesses since 2019!</p>
           </div> */}
         </div>
-        <div className=' mt-6  h-[85vh] mx-auto    relative group shadow-md w-[90%] sm:flex sm:flex-row sm:h-[55vh]'>
+        <div className=' relative lg:bottom-[45%] mt-0 h-[85vh] mx-auto     group shadow-md w-[90%] sm:flex sm:flex-row  bg-cyan-100 sm:h-[55vh]'>
             <div style={{backgroundImage:`url(${newsInfo[newsIndex].url})`}} className=' bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] duration-500 sm:w-[40%] sm:h-full'>
             </div>
             <div className='w-full flex flex-col justify-evenly h-[55vh] mt-8 sm:w-[50%] sm:justify-evenly sm:mx-auto sm:h-full px-2'>
-              <div className='text-left w-[100%] text-[1.55rem] sm:text-[1.8rem] h-[25vh]  font-poppins font-bold [300] flex justify-center flex-col mt-4'>
+              <div className='text-left w-[100%] text-[1.55rem] sm:text-[1.8rem] h-[25vh]  font-poppins font-[300] flex justify-center flex-col mt-4'>
                 <h3 className='w-full h-[10vh]'>{newsInfo[newsIndex].caption}</h3>
               </div>
               <div className='text-left text-[1rem] mt-4 sm:font-semibold'>
@@ -580,9 +452,12 @@ title:"FMCG"
                 <a href={newsInfo[newsIndex].links}>Read more</a>
                 
               </div>
+              <div className='mb-4  text-right flex flex-row justify-end w-full sm:justify-none sm:text-right sm:mb-8'>
+                <FaLinkedin className='text-5xl w-[20%] text-cyan-300 sm:m-1' /> 
+              </div>
             </div>
             {/* left arrow */}
-            <div className='bg-opacity-[0.9] sm:hidden sm:group-hover:block absolute top-[29.5%] sm:top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-white text-cyan-400 cursor-pointer'>
+            <div className='bg-opacity-[0.9] sm:hidden sm:group-hover:block absolute top-[50.5%] sm:top-[70%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-white text-cyan-400 cursor-pointer'>
               <BsChevronCompactLeft onClick={() => prevNews()} className="sm:hidden" size={30}/>
               <BsChevronCompactLeft onClick={() => prevNews()} className=" hidden sm:block" size={50}/>
             </div>

@@ -413,7 +413,7 @@ title:"FMCG"
         <div className=' mt-8  h-[30vh] w-full m-auto px-4 relative group sm:h-[60vh] sm:font-normal'>
             <div style={{backgroundImage:`url(${slides[currentIndex].url})`}} className=' rounded bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] sm:h-full duration-500'>
               <div className= ' relative flex justify-center self-center rounded text-white w-full h-[25vh] sm:h-[60vh] bg-opacity-[0.6] bg-black'>
-                <h3 className='text-center absolute top-[45%] text-3xl font-poppins font-[300] sm:text-5xl  ' >{slides[currentIndex].title}</h3>
+                <h3 className='text-center absolute top-[45%] text-3xl font-poppins font-[300] font-bold sm:text-5xl  ' >{slides[currentIndex].title}</h3>
               </div>
             </div>
             {/* left arrow */}

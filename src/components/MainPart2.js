@@ -330,7 +330,7 @@ title:"FMCG"
                       <h3>{newsInfo[0].caption}</h3>
                     </div>
                     <div className='text-left text-[0.8rem] mt-4  '>
-                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden leading-[1.9] text-justify pl-2 pr-2 duration-500'>{newsInfo[0].content}</p>
+                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden leading-[1.9] text-justify  pr-2 duration-500'>{newsInfo[0].content}</p>
                     </div>
                     <div className='text-right flex flex-row justify-end w-full sm:justify-none sm:mb-4 sm:text-right'>
                     {/* <a href='https://www.aninews.in/news/business/business/co-founders-shalin-maheshwari-lalit-singh-setting-new-benchmark-for-helping-blue-collar-workforce-through-their-startup-meraqui20220520185135/' target='blank'><FaLinkedin className='text-[4rem]  w-[50%] text-cyan-300' /></a> */}
@@ -350,7 +350,7 @@ title:"FMCG"
                       <h3>{newsInfo[1].caption}</h3>
                     </div>
                     <div className='text-left text-[0.8rem] mt-4  '>
-                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden text-justify leading-[1.9] pl-2 pr-2 duration-500'>{newsInfo[1].content}</p>
+                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden text-justify leading-[1.9]  pr-2 duration-500'>{newsInfo[1].content}</p>
                     </div>
                     <div className='text-right flex flex-row justify-end w-full sm:justify-none sm:mb-4 sm:text-right'>
                      {/* <a href='https://www.englandnewsportal.com/news/co-founders-shalin-maheshwari-lalit-singh-setting-new-benchmark-for-helping-blue-collar-workforce-through-their-startup-meraqui20220520185127/' target='blank'><FaLinkedin className='text-[4rem]  w-[50%] text-cyan-300' /></a> */} 
@@ -369,7 +369,7 @@ title:"FMCG"
                       <h3>{newsInfo[2].caption}</h3>
                     </div>
                     <div className='text-left text-[0.8rem] mt-4 '>
-                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden leading-[1.9] text-justify pl-2 pr-2 duration-500'>{newsInfo[2].content}</p>
+                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden leading-[1.9] text-justify  pr-2 duration-500'>{newsInfo[2].content}</p>
                     </div>
                     <div className='text-right flex flex-row justify-end w-full sm:justify-none sm:mb-4 sm:text-right'>
                     {/* <a href='https://www.zee5.com/articles/co-founders-shalin-maheshwari-lalit-singh-setting-new-benchmark-for-helping-blue-collar-workforce-through-their-startup-meraqui' target='blank'><FaLinkedin className='text-[4rem]  w-[50%] text-cyan-300' /></a> */}
@@ -388,7 +388,7 @@ title:"FMCG"
                       <h3>{newsInfo[3].caption}</h3>
                     </div>
                     <div className='text-left text-[0.8rem] mt-4 '>
-                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden leading-[1.9] text-justify pl-2 pr-2 duration-500'>{newsInfo[3].content}</p>
+                      <p className='font-poppins font-[500] sm:h-[15vh] overflow-y-auto overflow-x-hidden leading-[1.9] text-justify  pr-2 duration-500'>{newsInfo[3].content}</p>
                     </div>
                     <div className='text-right flex flex-row justify-end w-full sm:justify-none sm:mb-4 sm:text-right'>
                     {/* <a href='https://www.londonchannelnews.com/news/co-founders-shalin-maheshwari-lalit-singh-setting-new-benchmark-for-helping-blue-collar-workforce-through-their-startup-meraqui202205201851' target='blank'><FaLinkedin className='text-[4rem]  w-[50%] text-cyan-300' /></a> */}

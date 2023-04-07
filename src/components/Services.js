@@ -63,7 +63,7 @@ const Services = () => {
             <div className='w-full mt-2'>
               <p className='text-left sm:text-right sm:text-[1.2rem]'>
                 <br></br>
-              Permanent staff onboarding and integration into a single company is a vital commitment. These commitments are made to trusted and qualified individuals thanks to our permanent employment solutions. 
+              Permanent staff onboarding and integration into a single company is a vital commitment. These commitments are made to trusted and qualified individuals solutions. 
               </p>
             </div>
             <br></br>
@@ -113,7 +113,7 @@ const Services = () => {
               <p className='text-left sm:text-right sm:text-[1.2rem]'>
                 <br></br>
               We will pick, pack, and ship your items. Our 3PL services will connect your goods from your factories to your customers. 
-              As the third-party logistics market expands, several 3PL providers are emerging. A company seeking supply chain outsourcing should request a combination of old-world expertise and experience, as well as new-world energy and innovation, at this time.
+              As the third-party logistics market expands, several 3PL providers are emerging. A company seeking supply chain outsourcing should request a combination of old-world expertise and experience, as well as new-world energy.
               </p>
             </div>
             <br></br>

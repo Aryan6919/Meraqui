@@ -347,7 +347,7 @@ const MainPart1 = () => {
                             </Swiper>
                         </section>
                     </SwiperSlide>
-                    <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto  mt-4   '>
+                    <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto     '>
 
                         <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg   p-2  bg-[#FAFFEE]'>
                             <div className=' sm:w-[100%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
@@ -396,7 +396,7 @@ const MainPart1 = () => {
                             </Swiper>
                         </section>
                     </SwiperSlide>
-                    <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto  mt-4   '>
+                    <SwiperSlide className='sm:flex sm:flex-row w-[95%] sm:-[100%] mx-auto     '>
 
                         <section className='sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white  border-[2px] shadow-lg   p-2 bg-[#FFE9E9]'>
                             <div className=' sm:w-[100%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>

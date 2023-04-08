@@ -204,7 +204,7 @@ const MEngine = () => {
                         muted 
                         controlsList="hidden"
                         loop
-                        className='- w-[75%] h-[65vh] transition sm:duration-500 pr-7'  
+                        className=' lg:w-[75%] sm:w-[100%] h-[65vh] transition sm:duration-500 pr-7'  
                         
                         src={require("../image/whyChooseUs/CHAT.mp4")}
                     />}
@@ -213,7 +213,7 @@ const MEngine = () => {
                         muted 
                         controlsList="hidden"
                         loop
-                        className='- w-[75%] h-[65vh] transition sm:duration-500  pr-7'  
+                        className=' lg:w-[75%] h-[65vh] sm:w-[100%] transition sm:duration-500  pr-7'  
                         
                         src={require("../image/whyChooseUs/ONBOARDING.mp4")}
                     />}
@@ -222,7 +222,7 @@ const MEngine = () => {
                         muted 
                         controlsList="hidden"
                         loop
-                        className=' w-[75%] h-[65vh] transition  pr-7'  
+                        className=' lg:w-[75%] h-[65vh] transition sm:w-[100%]  pr-7'  
                         
                         src={require("../image/whyChooseUs/PAYROLL.mp4")}
                     />}
@@ -231,7 +231,7 @@ const MEngine = () => {
                         muted 
                         controlsList="hidden"
                         loop
-                        className='w-[75%] h-[65vh] transition sm:duration-500 pr-7'  
+                        className='lg:w-[75%] h-[65vh] sm:w-[100%] transition sm:duration-500 pr-7'  
                         
                         src={require("../image/whyChooseUs/COMPLIANCE.mp4")}
                     />}

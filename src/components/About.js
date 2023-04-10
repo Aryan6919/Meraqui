@@ -119,7 +119,7 @@ const About = () => {
 " ><img className='sm:w-[100%]' src={require('../image/staff/lalit.png')} alt="photo1" /></a>
             <div className='flex flex-col items-center'>
               <h4 className=' font-poppins font-[400] sm:text-[26px] mt-8 '>Lalit Singh</h4>
-              <p className=' font-poppins font-[300] sm:text-[20px] opacity-60'></p>
+              <p className=' font-poppins font-[300] sm:text-[20px] opacity-60'>Founder CEO</p>
             </div>
           </div>
       

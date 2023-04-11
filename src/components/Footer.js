@@ -36,12 +36,12 @@ const Footer = () => {
                     </div>
                     {/* <div className='text-left w-[93%]'> */}
                     <div className='flex flex-row justify-start w-full mt-4 sm:w-[66%] sm:mt-8 px-4'>
-                        <span className='sm:w-[10%] lg:mt-2 text-[2rem] text-cyan-400 mr-2 sm:text-[2.8rem] sm:h-fill'><img className='lg:w-[65%]' src={require("../image/phone.png")} alt="" /></span>
+                        <span className='lg:mt-2 w-[6%] mt-2  sm:w-[10%]  text-[2rem] text-cyan-400 mr-2 sm:text-[2.8rem] sm:h-fill'><img className='lg:w-[65%]' src={require("../image/phone.png")} alt="" /></span>
                         <p className="max-w-full sm:w-[100%] text-left sm:leading-[1.8] font-poppins font-[400] sm:text-[13px]  sm:flex sm:justify-center sm:flex-col mt-2">+91-9560772719</p>
                     </div>
                     {/* <div className='flex flex-row justify-center w-full sm:w-[100%] sm:mt-4 mt-4 relative left-[-14%] sm:left-0'> */}
                     <div className='flex flex-row justify-start w-full mt-4 sm:w-[66%] sm:mt-8 px-4'>
-                        <span className='lg:mt-1 sm:w-[10%] text-[2rem] text-cyan-400 mr-2 sm:text-[2.8rem] sm:h-fill'><img className='lg:w-[70%]' src={require("../image/letter.png")} alt="" /></span>
+                        <span className='lg:mt-1 mt-1 w-[6%] sm:w-[10%] text-[2rem] text-cyan-400 mr-2 sm:text-[2.8rem] sm:h-fill'><img className='lg:w-[70%]' src={require("../image/letter.png")} alt="" /></span>
                         <p className="max-w-full sm:w-[100%] text-left sm:leading-[1.8] font-poppins font-[400] sm:text-[13px] sm:ml-1  sm:flex sm:justify-center sm:flex-col ">contact@meraqui.com</p>
                     </div>
                 </div>

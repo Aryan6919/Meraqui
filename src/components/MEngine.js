@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react'
+import React,{useState} from 'react'
 // import {BsFillQuestionCircleFill} from 'react-icons/bs';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
@@ -14,68 +14,41 @@ const MEngine = () => {
     const [slide4,setSlide4] = useState(false);
     const [originalIndex,setOriginalIndex] = useState(0)
 
-    console.log(slide1)
-    console.log(slide2)
-    console.log(slide3)
-    console.log(slide4)
-   
-    useEffect(() => {
-        const interval = setInterval(() => {
-            if(slide1===true && slide2 === false && slide3 ===false && slide4 === false){
-                setSlide1(false) ;
-                setSlide2(true) ;
-                
-            }
-         else if(slide1===false && slide2 === true && slide3 ===false && slide4 === false){
-            setSlide2(false) ;
-             setSlide3(true) ;
-                // setSlide2(()=>{slide1===false && slide2 == false && slide3 ===true && slide4 === false});  
-            }
-        else if(slide1===false && slide2 === false && slide3 ===true && slide4 === false){
-            setSlide3(false) ;
-             setSlide4(true);
-                // setSlide2(()=>{slide1===false && slide2 == false && slide3 === false && slide4 === true});  
-            }
-            else{
-                setSlide4(false);
-                setSlide1(true);
-                // setSlide2(()=>{slide1===false && slide2 == true && slide3 ===false && slide4 === false});  
-            }
-        }, 10000);
     
-        return () => clearInterval(interval);
-      },);
+    
+   
+
 
 
     
     const AddClass1 = (e) => {
         // e.target.classList.add("slide")
-        setSlide1(true)
         setSlide2(false)
+        setSlide1(true)
         setSlide3(false)
         setSlide4(false)
         setOriginalIndex(e.target.value)
     }
     const AddClass2 = (e) => {
         // e.target.classList.add("slide")
-        setSlide1(false)
         setSlide2(true)
+        setSlide1(false)
         setSlide3(false)
         setSlide4(false)
         setOriginalIndex(e.target.value)
     }
     const AddClass3 = (e) => {
         // e.target.classList.add("slide")
-        setSlide1(false)
         setSlide2(false)
+        setSlide1(false)
         setSlide3(true)
         setSlide4(false)
         setOriginalIndex(e.target.value)
     }
     const AddClass4 = (e) => {
         // e.target.classList.add("slide")
-        setSlide1(false)
         setSlide2(false)
+        setSlide1(false)
         setSlide3(false)
         setSlide4(true)
         setOriginalIndex(e.target.value)
@@ -151,14 +124,17 @@ const MEngine = () => {
           </div>
           <div className='w-full mt-3'>
             <p className='text-left sm:w-[75%] font-poppins font-[300] sm:text-[1.2rem] leading-[35px]'>
-              
+              {/* We are a SaaS-enabled workforce management platform specializing in employee lifecycle management, job and requisition management, and training and interview assessments.
+              <br></br> <br></br>We link our expertise with your business demands and proactively begin HR procedures to meet your needs, harnessing the power of Artificial Intelligence.
+              <br></br><br></br>We have a robust pan-India presence in 23 states + 3 Union Territories and 120+ cities and are aiming to grow significantly in the times to come.
+              <br></br><br></br> */}
               karam.ai is an Al-based companion who uses chat bot functionality to interact with candidates and employers.
                          He doesn’t generate just leads or qualified leads. He runs his proprietary match logic to zero in on the most suitable candidates.
                         His Background verification engine ensures that only verified candidates get on-boarded.
             </p>
           </div>
         </div>
-            
+            {/* <div className='sm:w-[60%] my-4  sm:h-[85vh] sm:relative sm:right-[-20%]'> */}
             <div className='mx-auto w-[95%] sm:w-[55%] sm:relative sm:right-[-5%]'>
                 <img className=' w-[100%] mx-auto sm:h-[65vh]' src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
             </div>
@@ -222,13 +198,13 @@ const MEngine = () => {
                             <button style={slide4 ? {height: "6px", marginBottom: "5px"} : null }  onClick={(e) => AddClass4(e)} value='3' id='btn4' className=' outline-none duration-300 sm:before:content-["4"] sm:before:font-semibold sm:before:text-[0.8rem] sm:before:relative sm:before:w-[100%] sm:before:text-left sm:before:-top-[20px] sm:w-[25%] sm:flex sm:flex-row sm:bg-cyan-400 sm:h-[1.5px] '></button>   
                         </div>
                 </div>
-                <div className=' rounded-sm sm:w-[100%] w-[100%]   h-[60vh] mx-auto sm:relative sm:right-[-10%] sm:mt-8 mt-8'>
+                <div className=' rounded-sm w-[100%] lg:w-[100%] sm:h-[70vh]   h-[60vh] mx-auto flex justify-center sm:mt-8 mt-8'>
                     {slide1 && <video 
                         autoPlay 
                         muted 
                         controlsList="hidden"
                         loop
-                        className=' lg:w-[75%] sm:w-[100%] h-[65vh] transition sm:duration-500 pr-7'  
+                        className=' lg:w-[75%] w-[100%] lg:h-[65vh] h-[60vh] transition sm:duration-500 pr-7'  
                         
                         src={require("../image/whyChooseUs/CHAT.mp4")}
                     />}

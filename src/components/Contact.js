@@ -40,11 +40,11 @@ const Contact = () => {
         </section>
         <section className='bg-cyan-100 w-full h-fill pt-10 sm:flex sm:flex-row sm:h-[40vh]'>
             <div className=' w-full sm:w-[40%] flex justify-center '>
-                <div className=' flex flex-row w-[90%]'>
-                    <div className=' w-[45%] sm:w-[25%] ml-24'>
-                        <img className='w-[100%]' src={require('../image/img/Adress.png')} alt="" />
+                <div className=' flex flex-row justify-start items-start lg:w-[90%] w-[100%]'>
+                    <div className=' w-[45%]  lg:w-[25%] lg:ml-24 flex justify-start'>
+                        <img className='  left-[-25px] w-[100vw] lg:w-[100%]  ' src={require('../image/img/Adress.png')} alt="" />
                     </div>
-                    <div className='ml-2 w-[60%] sm:ml-8'>
+                    <div className='ml-2 w-[80%] lg:w-[60%]  sm:ml-8'>
                         <div className='w-full'>
                             <h2 className=' text-xl   text-left sm:text-[1rem] font-poppins font-[500]'>ADDRESS:</h2>
                         </div>
@@ -58,11 +58,11 @@ const Contact = () => {
                 </div>
             </div>
             <div className=' w-full sm:w-[40%] flex justify-center '>
-                <div className=' flex flex-row w-[90%]'>
-                    <div className=' w-[45%] sm:w-[25%] ml-24'>
+                <div className=' flex flex-row w-[100%] lg:w-[90%]'>
+                    <div className=' w-[45%] sm:w-[25%] ml-2 lg:ml-24'>
                         <img className='w-[100%]' src={require('../image/img/Contact (2).png')} alt="" />
                     </div>
-                    <div className='ml-2 w-[60%] sm:ml-8'>
+                    <div className='ml-2 lg:w-[60%] w-[85%]  flex flex-col items-start sm:ml-8'>
                         <div className='w-full'>
                             <h2 className=' font-poppins font-[500] text-xl   text-left sm:text-[1rem]'>PHONE:</h2>
                         </div>
@@ -76,12 +76,12 @@ const Contact = () => {
             </div>
             <div className=' w-full sm:w-[40%] flex justify-center '>
                 <div className=' flex flex-row w-[90%] '>
-                    <div className=' w-[45%] sm:w-[25%] ml-8'>
+                    <div className=' w-[45%] sm:w-[25%] lg:ml-8'>
                         <img className='w-[100%]' src={require('../image/img/WorkHours.png')} alt="" />
                     </div>
-                    <div className='ml-2 w-[60%] sm:ml-8'>
+                    <div className='ml-2 w-[85%] lg:w-[60%] sm:ml-8'>
                         <div className='w-full'>
-                            <h2 className=' text-xl   text-left sm:text-[1rem] font-poppins font-[300]'>WORK HOURS:</h2>
+                            <h2 className=' text-xl   text-left sm:text-[1rem] font-poppins font-[500]'>WORK HOURS:</h2>
                         </div>
                         <div className='w-full mt-2 flex'>
                             <p className='text-left font-poppins font-[300]'>

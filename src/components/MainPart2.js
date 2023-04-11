@@ -442,8 +442,8 @@ title:"FMCG"
             <div style={{backgroundImage:`url(${newsInfo[newsIndex].url})`}} className=' bg-center bg-cover bg-no-repeat w-[100%] h-[25vh] duration-500 sm:w-[40%] sm:h-full'>
             </div>
             <div className='w-full flex flex-col justify-evenly h-[55vh] mt-8 sm:w-[50%] sm:justify-evenly sm:mx-auto sm:h-full px-2'>
-              <div className='text-left w-[100%] text-[1.55rem] sm:text-[1.8rem] h-[25vh]  font-poppins font-[300] flex justify-center flex-col mt-4'>
-                <h3 className='w-full h-[10vh]'>{newsInfo[newsIndex].caption}</h3>
+              <div className='text-left w-[100%] text-[1.55rem] sm:text-[1.8rem] h-[20vh]  font-poppins font-[300] flex justify-center flex-col lg:mb-0 mb-1 mt-4'>
+                <h3 className='w-full h-[5vh] lg:h-[10vh]'>{newsInfo[newsIndex].caption}</h3>
               </div>
               <div className='text-left text-[1rem] mt-4 sm:font-semibold'>
                 <p className='sm:h-[30vh] sm:overflow-y-auto overflow-y-auto  sm:overflow-x-hidden overflow-x-hidden h-[25vh] text-justify font-poppins font-[500]'>{newsInfo[newsIndex].content}</p>
@@ -452,15 +452,16 @@ title:"FMCG"
                 <a href={newsInfo[newsIndex].links}>Read more</a>
                 
               </div>
-               
-             
+              <div className='mb-4  text-right flex flex-row justify-end w-full sm:justify-none sm:text-right sm:mb-8'>
+                <FaLinkedin className='text-5xl w-[20%] text-cyan-300 sm:m-1' /> 
+              </div>
             </div>
             {/* left arrow */}
-            <div className='bg-opacity-[0.9] sm:hidden sm:group-hover:block absolute top-[50.5%] sm:top-[70%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-white text-cyan-400 cursor-pointer'>
+            <div className='bg-opacity-[0.9] sm:hidden sm:group-hover:block absolute top-[29.5%] sm:top-[70%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-white text-cyan-400 cursor-pointer'>
               <BsChevronCompactLeft onClick={() => prevNews()} className="sm:hidden" size={30}/>
               <BsChevronCompactLeft onClick={() => prevNews()} className=" hidden sm:block" size={50}/>
             </div>
-            <div className=' bg-opacity-[0.9] sm:hidden sm:group-hover:block absolute top-[29.5%] sm:top-[50%] translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-white text-cyan-400 cursor-pointer'>
+            <div className=' bg-opacity-[0.9] sm:hidden sm:group-hover:block absolute top-[29.5%] sm:top-[70%] translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-white text-cyan-400 cursor-pointer'>
               <BsChevronCompactRight onClick={() => nextNews()}  className='sm:hidden' size={30}t/>
               <BsChevronCompactRight onClick={() => nextNews()}  className='hidden sm:block' size={50}t/>
             </div>

@@ -452,9 +452,8 @@ title:"FMCG"
                 <a href={newsInfo[newsIndex].links}>Read more</a>
                 
               </div>
-              <div className='mb-4  text-right flex flex-row justify-end w-full sm:justify-none sm:text-right sm:mb-8'>
-                <FaLinkedin className='text-5xl w-[20%] text-cyan-300 sm:m-1' /> 
-              </div>
+               
+             
             </div>
             {/* left arrow */}
             <div className='bg-opacity-[0.9] sm:hidden sm:group-hover:block absolute top-[50.5%] sm:top-[70%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-white text-cyan-400 cursor-pointer'>

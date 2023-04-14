@@ -1,6 +1,9 @@
+import { useSetAtom } from 'jotai';
 import React, { useEffect, useState, useRef } from 'react'
 // import {BsFillQuestionCircleFill} from 'react-icons/bs';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
+import { videoIndexAtom } from '../hooks/store';
 
 
 
@@ -9,57 +12,40 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 const MEngine = () => {
 
     const [currentVideo, setCurrentVideo] = useState(0);
-    const [playFullVideo, setPlayFullVideo] = useState(false);
-    const [videoClicked, setVideoClicked] = useState(false)
+    const [onHover, setOnHover] = useState(false);
+    const navigate = useNavigate();
+    const setVideoIndex = useSetAtom(videoIndexAtom);
     const intervalId = useRef(null);
 
     const handleButtonClick = (index) => {
         setCurrentVideo(index);
         clearInterval(intervalId.current);
         intervalId.current = setInterval(
-            () => {
-                setCurrentVideo((currentVideo) => (currentVideo + 1) % content.length);
-                console.log("currentVideo", currentVideo);
-            },
-            10000
-        );
-    };
-
-    const handleVideoEnded = () => {
-        setPlayFullVideo(false);
-        setCurrentVideo((currentVideo) => (currentVideo + 1) % content.length);
-        intervalId.current = setInterval(
-            () =>
-                setCurrentVideo((currentVideo) => (currentVideo + 1) % content.length),
+            () => setCurrentVideo((currentVideo) => (currentVideo + 1) % content.length),
             10000
         );
     };
 
     const handleVideoClick = () => {
-        setVideoClicked(true);
         clearInterval(intervalId.current);
-        document.querySelector("#video").play();
-        setPlayFullVideo(true);
+        setVideoIndex(currentVideo);
+        navigate('/engine/video')
     };
 
     const handleVideoHoverIn = () => {
+        setOnHover(true)
         clearInterval(intervalId.current);
         document.querySelector("#video").pause();
     };
 
     const handleVideoHoverOut = () => {
-        if (videoClicked) {
-            clearInterval(intervalId.current);
-        } else {
-            // clearInterval(intervalId.current);
-            // setVideoClicked(false)
+        setOnHover(false)
             document.querySelector("#video").play();
             intervalId.current = setInterval(
                 () =>
                 setCurrentVideo((currentVideo) => (currentVideo + 1) % content.length),
                 10000
                 );
-        }
     };
 
     useEffect(() => {
@@ -200,16 +186,15 @@ const MEngine = () => {
                             ))}
                         </div>
                     </div>
-                    <div className=' rounded-sm sm:w-[100%] w-[100%]   h-[60vh] mx-auto sm:relative sm:right-[-10%] sm:mt-8 mt-8'>
+                    <div className='rounded-sm sm:w-[100%] w-[100%]   h-[60vh] mx-auto sm:relative sm:right-[-10%] sm:mt-8 mt-8'>
                         <video
                             id="video"
                             src={currentVideo === 0 && require("../image/whyChooseUs/CHAT.mp4") || currentVideo === 1 && require("../image/whyChooseUs/ONBOARDING.mp4") || currentVideo === 2 && require("../image/whyChooseUs/PAYROLL.mp4") || currentVideo === 3 && require("../image/whyChooseUs/COMPLIANCE.mp4")}
                             autoPlay
                             muted
-                            className=' lg:w-[100%] sm:w-[100%] h-[65vh] pr-7'
-                            contols={playFullVideo}
-                            style={{ width: "20rem", height: "20rem" }}
-                            onEnded={handleVideoEnded}
+                            loop
+                            className='lg:w-[90%] sm:w-[100%] h-[65vh] pr-7'
+                            style={{ width: "20rem", height: "20rem", border: onHover? "4px solid #00FFFF": "" }}
                             onClick={handleVideoClick}
                             onMouseEnter={handleVideoHoverIn}
                             onMouseLeave={handleVideoHoverOut}

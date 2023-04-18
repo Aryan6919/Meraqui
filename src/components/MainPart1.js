@@ -252,7 +252,7 @@ const MainPart1 = () => {
 
                     <SwiperSlide className='sm:flex sm:flex-row w-[95%] mx-auto  mt-4   '>
 
-                        <section className=' sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4 bg-white   p-2 bg-[#E5FBFF]'>
+                        <section className=' sm:flex sm:w-[95%] sm:flex-row w-[90%] mx-auto  mt-4    p-2 bg-[#E5FBFF]'>
                             <div className=' sm:w-[100%] h-[30vh] sm:h-auto my-auto  flex flex-col justify-center'>
                                 <div className='flex w-[100%]'>
                                     <p className='w-[100%] sm:w-[70%] text-left sm:text-4xl font-quicksand font-[400] p-4'>
